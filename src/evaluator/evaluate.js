@@ -58,6 +58,8 @@ export async function evaluateSetup(setup, provider, opts = {}) {
     gaps: 0, notes: [], reasonCode: null };
   const done = (result, extra = {}) => ({ ...base, result, ...extra });
 
+  if (setup.analysisTimeSource === 'unknown_before_tracking')
+    return done('INVALID', { reasonCode: 'ANALYSIS_TIME_UNKNOWN', notes: ['Setup sudah ada sebelum pelacakan dimulai; waktu analisis tidak diketahui, jadi tidak dievaluasi.'] });
   const v = validateSetup(setup);
   if (!v.ok) return done('INVALID', { reasonCode: v.reason, notes: [`Setup tidak valid: ${v.reason}`] });
   const long = setup.direction === 'LONG';
