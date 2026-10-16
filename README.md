@@ -1,53 +1,62 @@
 # Crypto Engine Benchmark
 
-Merekam setiap setup dari **Mesin 1** (`/crypto/`) dan **Mesin 2** (`/tn/`), mengevaluasinya terhadap candle Binance (TP / SL / dll.), lalu membandingkan performa secara statistik. Hasil bersifat **teoretis berbasis candle** (bukan trading nyata).
+Merekam setiap setup dari **Mesin 1** (`/crypto/`) dan **Mesin 2** (`/tn/`), mengevaluasinya terhadap
+candle Binance (TP / SL / dll.), lalu membandingkan performa. Hasil bersifat **teoretis berbasis candle**,
+bukan trading nyata. Status tiap selector dan asumsi ada di `docs/VERIFIED.md`.
 
-> ## ⚠️ Status penting
-> Struktur DOM kedua situs **belum bisa diverifikasi** (halamannya dirender JavaScript). Karena itu `cardSelector` sengaja `null` dan scraper melaporkan `NEEDS_SELECTOR_VERIFICATION` — bukan setup palsu. Langkah 3 di bawah menyelesaikannya. Evaluator, statistik, penyimpanan, dashboard, dan workflow sudah selesai dan teruji.
+## Sumber data
+- **Mesin 1:** DOM halaman (`#setups > article.c`), dibuka dengan Playwright. Waktu analisis tidak ditampilkan
+  di kartu, jadi setup yang sudah ada sebelum pelacakan dimulai diberi status `ANALYSIS_TIME_UNKNOWN`
+  dan tidak dievaluasi.
+- **Mesin 2:** `data/journal.json` (JSON publik yang juga dimuat halaman /tn/). Tanpa browser.
+- **Harga:** Binance Spot klines (`data-api.binance.vision`).
 
 ## Setup (cukup lewat web GitHub)
-1. Buat repo baru, unggah seluruh isi proyek (termasuk folder `.github/`; bila drag-and-drop tidak membawa folder tersembunyi, buat file `.github/workflows/*.yml` manual lewat *Add file → Create new file*).
+1. Unggah isi proyek ke repo (termasuk `.github/`).
 2. **Settings → Pages → Source: GitHub Actions.** **Settings → Actions → General → Workflow permissions: Read and write.**
-3. **Actions → "Discover" → Run workflow.** Hasil di `data/discovery/` (`candidates.json`, `rendered.html`, `text.txt`, `network.json`, `storage.json`, `globals.json`, `binance-check.txt`). Dari situ:
-   - isi `cardSelector` di `config/sources.json` (dan `noSetupMarkerText` bila ada),
-   - sesuaikan `LABELS` di `src/parsers/crypto.js` & `tn.js`,
-   - jika `network.json`/`globals.json`/`storage.json` menunjukkan data terstruktur, parser JSON langsung lebih stabil daripada DOM — tempel isinya ke percakapan agar parser disesuaikan.
-4. **Actions → "Collect, evaluate, deploy" → Run workflow.** Setelah itu berjalan terjadwal tiap ±30 menit (**best-effort**: GitHub tidak menjamin ketepatan jadwal). Dashboard: `https://<user>.github.io/<repo>/`.
-5. GitHub Secrets: **tidak diperlukan** (Binance market data publik). Jika nanti perlu, simpan di *Settings → Secrets* dan baca via `process.env`.
+3. **Actions → "Collect, evaluate, deploy" → Run workflow.** Jalan terjadwal ±30 menit (best-effort).
+4. Dashboard: `https://<user>.github.io/<repo>/`.
+
+Tidak perlu GitHub Secrets (data publik).
 
 ## Alur
-`collect` (Playwright → kartu mentah → parser per mesin → normalisasi → upsert idempoten) → `evaluate` (candle Binance → status) → `build` (statistik → `site/data/dashboard.json`). Perintah: `npm run collect|evaluate|build|all`, `npm test`.
+`collect` (sumber → item mentah → `TO_RECORD[engine]` → `buildRecord` → upsert idempoten) →
+`evaluate` (candle Binance → status) → `build` (statistik → `site/data/dashboard.json`).
+`npm test` dijalankan di workflow sebelum koleksi; kegagalan test menghentikan run.
 
-## Keputusan desain (selain spesifikasi)
-- **Waktu analisis**: bila kartu tidak memuat waktu bertanda zona, dipakai waktu scan (`analysisTimeSource: "scan"`) — mesin menghitung di browser saat scan.
-- **Presisi hasil**: candle 1m sampai batas 15m pertama, lalu 15m; setiap kejadian (entry/TP/SL) **dipertajam ke 1m**. Waktu hasil = awal menit tersebut. TP & SL pada menit yang sama → `AMBIGUOUS`.
-- **Candle yang sudah berjalan saat analisis dibuang**; hanya candle tertutup yang dipakai.
-- **TP tercapai sebelum entry tersentuh** → `EXPIRED` (kode `TP_REACHED_BEFORE_ENTRY`), bukan menang.
-- **Waktu hasil non-candle** ditandai `resultTimeSource`: `timeout` (kedaluwarsa) / `scraper` (CANCELLED, waktu deteksi — bukan bukti harga).
-- **Celah data candle** mencegah vonis `EXPIRED` → `AMBIGUOUS`.
-- **Klaster near-duplicate**: mesin dapat menerbitkan ulang ide yang sama tiap scan. Statistik utama memakai *sampel independen* (satu per klaster: engine+simbol+arah, ≤24 jam, entry ±1%); semua setup tetap tersimpan dan bisa dilihat ("Semua setup").
-- **Verdict** "mesin lebih baik" hanya muncul bila tiap mesin ≥30 setup selesai dan CI95 bootstrap selisih expectancy tidak mencakup 0.
-- **Sanity check harga**: level menyimpang >50% dari harga pasar → `INVALID` (menangkap salah baca format angka).
-- Audit trail: `data/audit.jsonl` mencatat setiap perubahan status. Status final tidak dievaluasi ulang kecuali `node src/index.js evaluate --reeval-final` (tetap diaudit).
+## Aturan utama
+- **Status final:** `TP`, `SL`, `CANCELLED`, `EXPIRED`, `INVALID`, `AMBIGUOUS`. `PENDING` untuk yang masih aktif.
+- **Hasil sumber disimpan terpisah** (`sourceResult`). Dashboard menampilkan ketidaksesuaian TP/SL antara
+  sumber dan evaluasi kita di Data Quality.
+- **Waktu analisis:**
+  - `source`: dari sumber (Mesin 2).
+  - `first_seen`: waktu scan pertama kali melihat setup (Mesin 1, setelah pelacakan dimulai).
+  - `unknown_before_tracking`: setup yang sudah ada saat pelacakan dimulai (Mesin 1). Tidak dievaluasi.
+- **Setup baru dari sumber yang sama tidak menimpa histori.** ID Mesin 2 berasal dari hash `h` jurnal;
+  ID Mesin 1 berasal dari level kartu (stabil antar-scan).
+- **TP tercapai sebelum entry tersentuh** → `EXPIRED`, bukan menang.
+- **TP dan SL dalam candle yang sama** → diselesaikan dengan candle 1m; jika tetap ambigu → `AMBIGUOUS`.
+- **Verdict** "mesin lebih baik" hanya muncul jika tiap mesin punya ≥30 setup selesai dan CI95 bootstrap
+  selisih expectancy tidak mencakup 0.
+- Sampel independen: satu setup per klaster near-duplicate (engine + simbol + arah, ≤24 jam, entry ±1%).
 
 ## Asumsi & keterbatasan
-- Fill limit dianggap terjadi saat harga **menyentuh** level (nyata: belum tentu terisi/antrean). Fill pada level (bukan open saat gap). Rentang entry: LONG diisi di tepi atas, SHORT di tepi bawah. Market: open candle pertama setelah analisis.
-- Tanpa fee, funding, dan slippage. R = |TP−fill| / |fill−SL| untuk TP, −1 untuk SL.
-- Hanya **TP pertama** yang menjadi target evaluasi (TP lain tersimpan di data mentah).
-- Entry yang terpicu tapi belum selesai setelah 30 hari → `EXPIRED` (tidak dihitung menang/kalah). Entry tak tersentuh 72 jam → `EXPIRED`. Ubah di `config/settings.json`.
-- `CANCELLED` bergantung pada `cancelPatterns` (asumsi, belum terverifikasi).
+- Fill limit dianggap terjadi saat harga menyentuh level. Tanpa fee, funding, dan slippage.
+- R = |TP−fill| / |fill−SL| untuk TP; −1 untuk SL. Hanya TP pertama yang dievaluasi.
+- TTL entry 72 jam dan batas hold 30 hari (config/settings.json). Journal Mesin 2 memakai `due` 7 hari;
+  aturan yang sama diterapkan ke kedua mesin, jadi perbedaan status kedaluwarsa dicatat, bukan disamakan diam-diam.
 - Setup berurutan dari satu mesin berkorelasi; CI bersifat indikatif.
-- Fixture tes bersifat **sintetis** (termasuk contoh SUI SHORT): menguji logika, bukan fakta pasar. Contoh SUI **tidak** dianggap terkonfirmasi sampai data Binance nyata mendukungnya.
 
 ## Troubleshooting
 | Gejala | Penyebab / tindakan |
 |---|---|
-| Dashboard: "selector belum diverifikasi" | Lakukan langkah 3 |
-| `FETCH_FAILED` | Lihat Diagnostics: HTTP/timeout/JS error; coba run ulang |
-| `ZERO_CARDS_UNCONFIRMED` | Selector mungkin salah, atau isi `noSetupMarkerText` |
-| `priceDataError` (HTTP 451/403) | Binance memblokir runner; ubah `binanceBaseUrls` di settings; lihat `binance-check.txt` |
-| Push gagal | Concurrency + retry sudah ada; pastikan izin *Read and write* |
-| Banyak `INVALID` `PRICE_SANITY` | Format angka salah baca; cek `warnings` (`AMBIGUOUS_NUMBER_FORMAT`) |
+| `FETCH_FAILED` Mesin 1 | Lihat Diagnostics (HTTP/timeout/JS error). Run ulang. |
+| `ZERO_CARDS_UNCONFIRMED` Mesin 1 | Struktur halaman mungkin berubah. Jalankan Discover dan bandingkan dengan `docs/VERIFIED.md`. |
+| `SUMMARY_COUNT_MISMATCH` | Jumlah kartu tidak sama dengan ringkasan halaman. Periksa `rendered.html` terbaru. |
+| `JOURNAL_HTTP_*` Mesin 2 | journal.json tidak bisa diambil; run berikutnya akan mencoba lagi. |
+| `TIME_MISMATCH` | Field `t` tidak sama dengan `waktu` pada entri jurnal. Dicatat sebagai peringatan. |
+| `priceDataError` (HTTP 451/403) | Binance memblokir runner. Ubah `binanceBaseUrls` di settings. |
+| Push gagal | Concurrency dan retry sudah ada. Pastikan izin *Read and write*. |
 
-## Struktur
-`src/{scrapers,parsers,browser,price-data,evaluator,statistics,storage,tools}`, `src/normalize.js`, `src/aggregate.js`, `src/index.js`, `test/`, `site/`, `config/`, `data/`, `docs/VERIFIED.md`, `.github/workflows/`.
+## Menjalankan lokal
+`npm ci && npm test`. Koleksi nyata membutuhkan `npx playwright install chromium`.
