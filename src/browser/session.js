@@ -1,10 +1,23 @@
+/** Batas waktu keras untuk satu langkah. page.evaluate() Playwright TIDAK punya timeout bawaan. */
+export function withTimeout(promise, ms, label) {
+  let t;
+  const timer = new Promise((_, reject) => {
+    t = setTimeout(() => reject(Object.assign(new Error(`STEP_TIMEOUT:${label} setelah ${ms}ms`), { code: 'STEP_TIMEOUT' })), ms);
+  });
+  return Promise.race([promise, timer]).finally(() => clearTimeout(t));
+}
+
 export async function withBrowser(fn) {
   const { chromium } = await import('playwright');
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: true, args: ['--disable-dev-shm-usage'] });
   try {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, locale: 'id-ID', timezoneId: 'UTC' });
+    ctx.setDefaultTimeout(30000);
+    ctx.setDefaultNavigationTimeout(45000);
     return await fn(ctx);
-  } finally { await browser.close(); }
+  } finally {
+    await withTimeout(browser.close(), 15000, 'browser.close').catch(() => {});
+  }
 }
 
 // Dijalankan DI DALAM browser (via page.evaluate). Menunggu DOM diam selama quietMs.
