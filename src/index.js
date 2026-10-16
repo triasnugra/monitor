@@ -155,6 +155,7 @@ async function main() {
   store.saveDiagnostics(diag);
   const dash = build({ settings });
   console.log(JSON.stringify({ run, setups: dash.counts.setups }, null, 2));
+  process.exit(0); // kegagalan sudah tercatat di diagnostics; exit 0 agar langkah commit tetap jalan
 }
 
 if (process.argv[1] && import.meta.url === new URL(`file://${fs.realpathSync(process.argv[1])}`).href) {
