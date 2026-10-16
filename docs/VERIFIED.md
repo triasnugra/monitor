@@ -1,29 +1,61 @@
-[VERIFIED.md](https://github.com/user-attachments/files/33524457/VERIFIED.md)
 # Status verifikasi selector, endpoint, dan asumsi
 
-Diperiksa pada 2026-10-16 dengan membuka ketiga URL lewat fetch HTTP biasa (tanpa mengeksekusi JavaScript).
+Setiap item ditandai salah satu dari: **TERVERIFIKASI** (dibuktikan dari file di repo atau dari
+data nyata yang diunduh), **ASUMSI** (belum dibuktikan, sistem tidak boleh bergantung padanya tanpa
+pemeriksaan), **BELUM** (belum diperiksa).
 
-## Terverifikasi
-| Item | Bukti |
-|---|---|
-| Ketiga situs dirender lewat JavaScript | HTML statis hanya berisi kerangka + placeholder ("Menunggu pindai", "Menunggu scan…", "Memuat data Binance...") |
-| `/crypto/` punya tombol/teks **"Pindai ulang"** | Muncul di teks halaman statis. *Jenis elemen belum diketahui*; scraper memakai locator teks (`getByText`) |
-| `/tn/` punya tombol/teks **"Scan ulang"**, bagian "Sinyal setup", tabel "Jurnal sinyal Asgra" | Teks halaman statis |
-| Kedua mesin memakai data Binance | Teks `/crypto/`: "dihitung otomatis dari data Binance"; `/view/`: "Memuat data Binance..." |
-| `/view/` adalah dashboard harga (UTC/WIB clock, Hot/Tertinggi/Terendah/Vol 24j) | Teks statis; tidak ada bukti ia menyediakan OHLC historis → tidak dipakai sebagai sumber candle |
+## Mesin 1 — https://triasnugra.github.io/crypto/
 
-## BELUM terverifikasi (tidak ditebak oleh kode)
-| Item | Dampak | Cara memverifikasi |
+| Item | Status | Bukti / catatan |
 |---|---|---|
-| Selector kartu setup `/crypto/` dan `/tn/` | `cardSelector: null` → status `NEEDS_SELECTOR_VERIFICATION` | Jalankan workflow **Discover**, buka `data/discovery/<engine>/candidates.json` & `rendered.html` |
-| Kosakata label di kartu (Entry/TP/SL/…) | Label di `src/parsers/shared.js` hanyalah asumsi | Cocokkan dengan `text.txt`; ubah `LABELS` di `parsers/crypto.js` / `tn.js` |
-| Penanda "tidak ada setup" | `noSetupMarkerText: null` → 0 kartu = `ZERO_CARDS_UNCONFIRMED` | Lihat `text.txt` saat scan tanpa hasil |
-| Ada/tidaknya endpoint JSON atau data terstruktur | Kemungkinan data dihitung di browser dari REST Binance | `network.json`, `globals.json`, `storage.json` hasil Discover |
-| Apakah "Jurnal sinyal" (/tn/) menyimpan riwayat | Bisa jadi sumber data lebih stabil | `storage.json` (localStorage) |
-| Format angka tampilan (titik/koma) | Parser menandai `AMBIGUOUS_NUMBER_FORMAT` untuk kasus "1,144" | Contoh kartu nyata |
-| Ada/tidaknya waktu analisis & timeframe di kartu | Jika tidak ada: waktu analisis = waktu scan (`analysisTimeSource: "scan"`) | Contoh kartu nyata |
-| Akses `data-api.binance.vision` / `api.binance.com` dari runner GitHub | HTTP 451/403 jika diblokir | `data/discovery/binance-check.txt` |
-| Teks status "dibatalkan" mesin | `cancelPatterns` di `config/settings.json` adalah asumsi | Contoh status nyata |
+| Kartu setup: `div#setups > article.c[data-s]` (30 kartu) | TERVERIFIKASI | `data/discovery/crypto/rendered.html`. Fixture `test/fixtures/crypto-setups.html` diambil dari file ini. |
+| Ticker: `h3` di dalam kartu | TERVERIFIKASI | Kartu |
+| Arah: `.t > span > span.ch.L` (Long) / `.ch.S` (Short) | TERVERIFIKASI | 28 Long, 2 Short di rendered.html |
+| Status: chip ke-3 di header (`Aktif` / `Menunggu retest` / `Jauh`) | TERVERIFIKASI | Kelas `ch ok`, `ch wait`, `ch ` |
+| Entry: label `Entry limit`, nilai di teks sesudah `<span>` | TERVERIFIKASI | 30/30 kartu "Entry limit" |
+| SL: label `SL x%` (x = jarak SL dari entry, BUKAN risiko per trade), nilai harga | TERVERIFIKASI | 30/30 kartu |
+| TP: label `TP1` atau `TP2` | TERVERIFIKASI | 22 TP1, 8 TP2. Label disimpan di rawData.tpLabel |
+| `Rasio ke target akhir` (mis. 10.9R) | TERVERIFIKASI | Ini R ke target akhir, bukan ke TP1. Disimpan sebagai rawData.rrToFinalTarget. riskReward dihitung dari TP1. |
+| Alasan: teks `div.m` pertama sebelum ". Harga" | TERVERIFIKASI | Pola teks 30/30 |
+| Risiko $ dan qty: `.sz` ("Risiko $10: qty 18.5 AVAX, nilai posisi $214") | TERVERIFIKASI | 30/30 |
+| Ringkasan `#st`: "Selesai: N koin punya setup" | TERVERIFIKASI | Dicek konsisten dengan jumlah kartu (SUMMARY_COUNT_MISMATCH) |
+| Kartu juga muncul di `#top3` (3 kartu duplikat) | TERVERIFIKASI | Scraper hanya membaca `#setups` |
+| **Waktu analisis** | **BELUM ADA** | Kartu tidak menampilkan waktu. Setup yang sudah ada sebelum pelacakan diberi `unknown_before_tracking` dan tidak dievaluasi. Setup baru diberi `first_seen` (waktu scan pertama kali melihatnya, error ≤ jarak antar-scan). |
+| Field `riskPercent` | BELUM ADA | Tidak ditampilkan di kartu. Tidak diisi. |
+| `cancelPatterns` (teks "batal") | ASUMSI | Belum pernah muncul di data. |
+| Kartu tetap selama halaman dimuat ulang | ASUMSI | Belum diuji di browser sungguhan dari runner. |
 
-## Endpoint Binance yang dipakai
-`GET /api/v3/klines?symbol=…&interval=1m|15m&startTime=…&endTime=…&limit=1000` (dokumentasi publik Binance Spot). Respons: `[openTime, o, h, l, c, vol, closeTime, …]`.
+**Catatan integritas:** level kartu bisa berubah antar-scan (engine menghitung ulang). Perubahan level
+membuat setupId baru, sehingga satu ide bisa tercatat lebih dari sekali. Ini ditangani oleh klaster
+near-duplicate di statistik, bukan dengan menimpa.
+
+## Mesin 2 — https://triasnugra.github.io/tn/
+
+| Item | Status | Bukti / catatan |
+|---|---|---|
+| Sumber: `https://triasnugra.github.io/tn/data/journal.json` | TERVERIFIKASI | Dimuat halaman /tn/ (network.json). Berisi array 66 entri per 2026-10-16. |
+| Field: `id, waktu, t, aset, arah, entry, sl, tp, alasan, hasil, R, h` | TERVERIFIKASI | Isi entri dari file |
+| `t` (epoch ms) cocok dengan `waktu` | TERVERIFIKASI | Dicek dalam test untuk fixture (tidak ada TIME_MISMATCH) |
+| `h` unik per entri (hash rantai) | TERVERIFIKASI | Sembilan entri fixture unik; dua BTC SHORT 86620 pada hari berbeda punya h berbeda |
+| `Entry limit` untuk semua setup | TERVERIFIKASI (DOM) / ASUMSI (JSON) | 24 kemunculan "Entry limit" di DOM /tn/. JSON tidak punya field tipe entry; diasumsikan limit sama seperti DOM. |
+| `forward-report.json` (ringkasan forward-test) | TERVERIFIKASI | Dipakai hanya untuk diagnostik |
+| Arti `bm` dan `bi` | BELUM | Dua skenario hasil yang berbeda dalam satu entri. Disimpan utuh di rawData, tidak dipakai. |
+| Arti `hasil: "tidak terisi"` | ASUMSI | Diperlakukan sebagai originalStatus; tidak dipetakan ke CANCELLED. |
+| `due` = t + 7 hari | TERVERIFIKASI (angka) | Sistem ini memakai TTL 72 jam sendiri (config/settings.json). Perbedaan ini menyebabkan perbedaan status "kedaluwarsa" dan harus dicatat saat membandingkan. |
+| Journal diperbarui otomatis | BELUM | File statis di GitHub Pages; tidak diketahui seberapa sering diperbarui. Scraper memakai query `?_=` agar tidak mengambil cache lama. |
+
+**Perbedaan dengan DOM /tn/:** kartu DOM /tn/ (`div.c > div.g4`) hanya dipakai untuk pemeriksaan,
+bukan sumber. Scraper tidak memakai DOM Mesin 2.
+
+## Binance (sumber harga untuk evaluasi)
+
+| Item | Status | Bukti |
+|---|---|---|
+| `data-api.binance.vision/api/v3/klines` dapat diakses dari runner | TERVERIFIKASI | Log network discovery: semua permintaan HTTP 200 |
+| Simbol `*USDT` untuk semua ticker (termasuk NVDAB, SNDKB, XAUT, CRCLB, SOXLB, SPCXB) | TERVERIFIKASI | Permintaan klines di network.json dengan simbol tersebut berstatus 200 |
+| Format respons klines `[openTime, o, h, l, c, vol, closeTime, ...]` | TERVERIFIKASI (dokumentasi publik Binance) | — |
+
+## Yang belum diuji di lingkungan pengembangan
+
+- Ekstraksi DOM di Chromium sungguhan (fungsi sudah diuji dengan linkedom dan diserialisasi seperti page.evaluate, tetapi belum di browser). Tes pertama: workflow Collect.
+- Pengambilan `journal.json` dari situs langsung (lingkungan pengembangan tidak punya akses ke github.io). Tes pertama: workflow Collect.
