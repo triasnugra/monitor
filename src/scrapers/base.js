@@ -1,4 +1,4 @@
-import { waitForDomQuiet, readSnapshot } from '../browser/session.js';
+import { waitForDomQuiet, readSnapshot, withTimeout } from '../browser/session.js';
 
 /**
  * Scraper berbasis browser. `extract` adalah fungsi mandiri yang dijalankan di dalam halaman
@@ -38,16 +38,17 @@ export async function runScrape(page, cfg, extract) {
   }
 
   try {
-    const q = await page.evaluate(waitForDomQuiet, { quietMs: cfg.quietMs, timeoutMs: cfg.scanTimeoutMs });
+    const grace = cfg.stepGraceMs ?? 15000;
+    const q = await withTimeout(page.evaluate(waitForDomQuiet, { quietMs: cfg.quietMs, timeoutMs: cfg.scanTimeoutMs }), cfg.scanTimeoutMs + grace, 'wait-dom');
     diag.stable = q.stable;
     if (!q.stable) diag.warnings.push('DOM belum stabil sampai batas waktu scan.');
   } catch (e) {
-    diag.errors.push(`WAIT_ERROR: ${e.message.slice(0, 200)}`);
+    diag.errors.push(e.code === 'STEP_TIMEOUT' ? `SCAN_TIMEOUT: ${e.message}` : `WAIT_ERROR: ${e.message.slice(0, 200)}`);
     return out('FAILED');
   }
 
   let snapshot;
-  try { snapshot = await page.evaluate(readSnapshot); }
+  try { snapshot = await withTimeout(page.evaluate(readSnapshot), cfg.stepGraceMs ?? 20000, 'snapshot'); }
   catch (e) { diag.errors.push(`SNAPSHOT_ERROR: ${e.message.slice(0, 200)}`); return out('FAILED'); }
 
   if (!extract) {
@@ -56,7 +57,7 @@ export async function runScrape(page, cfg, extract) {
   }
 
   let res;
-  try { res = await page.evaluate(extract); }
+  try { res = await withTimeout(page.evaluate(extract), cfg.stepGraceMs ?? 30000, 'extract'); }
   catch (e) { diag.errors.push(`EXTRACT_ERROR: ${e.message.slice(0, 200)}`); return out('FAILED', { snapshot }); }
 
   const items = Array.isArray(res?.items) ? res.items : [];
