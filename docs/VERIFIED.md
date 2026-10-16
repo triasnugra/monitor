@@ -59,3 +59,13 @@ bukan sumber. Scraper tidak memakai DOM Mesin 2.
 
 - Ekstraksi DOM di Chromium sungguhan (fungsi sudah diuji dengan linkedom dan diserialisasi seperti page.evaluate, tetapi belum di browser). Tes pertama: workflow Collect.
 - Pengambilan `journal.json` dari situs langsung (lingkungan pengembangan tidak punya akses ke github.io). Tes pertama: workflow Collect.
+
+## Insiden: Discover #4 dibatalkan setelah 14m41s
+
+- Gejala: `discovery crypto: 169 network entries`, lalu `The operation was canceled` saat tn berjalan.
+- Penyebab langsung: job mencapai `timeout-minutes: 15`. Penyebab akar **belum diketahui**: satu langkah pada
+  mesin kedua tidak pernah selesai. `page.evaluate()` Playwright tidak punya timeout bawaan, sehingga
+  halaman yang memblokir thread utamanya membuat langkah menunggu tanpa batas.
+- Perbaikan: semua langkah browser kini dibatasi `withTimeout`; Discover menulis `status.json` per mesin
+  yang mencatat langkah mana yang macet; hasil parsial tetap dikomit (`if: always()`).
+- Jika terulang: buka `data/discovery/<mesin>/status.json` untuk melihat langkah yang gagal.
