@@ -9,7 +9,8 @@ const view = (s, cl) => ({
   result: s.evaluation?.result ?? 'PENDING', resultWib: toWib(s.evaluation?.resultTimeUtc), resultTimeSource: s.evaluation?.resultTimeSource ?? null,
   entryWib: toWib(s.evaluation?.entryTimeUtc), r: s.evaluation?.rMultiple ?? null, notes: s.evaluation?.notes ?? [],
   reasonCode: s.evaluation?.reasonCode ?? null, warnings: s.warnings ?? [], clusterId: cl?.clusterId, isPrimary: cl?.isPrimary ?? true,
-  analysisTimeSource: s.analysisTimeSource, priceDataError: s.evaluation?.priceDataError ?? null,
+  analysisTimeSource: s.analysisTimeSource, sourceResult: s.sourceResult ?? null, sourceR: s.sourceR ?? null,
+  priceDataError: s.evaluation?.priceDataError ?? null,
 });
 
 export function buildDashboard({ setups, diagnostics, cfg, nowIso }) {
@@ -36,6 +37,8 @@ export function buildDashboard({ setups, diagnostics, cfg, nowIso }) {
     unverified: rows.filter((r) => r.priceDataError),
     withWarnings: rows.filter((r) => r.warnings.length), nearDuplicates: rows.filter((r) => !r.isPrimary),
     conflicts: pairs.filter((p) => p.relation === 'CONFLICT'),
+    sourceDisagreements: rows.filter((r) => ['TP', 'SL'].includes(r.sourceResult) && ['TP', 'SL'].includes(r.result) && r.sourceResult !== r.result),
+    unknownAnalysisTime: rows.filter((r) => r.analysisTimeSource === 'unknown_before_tracking'),
   };
   return { generatedAtUtc: nowIso, generatedAtWib: toWib(nowIso), counts: { setups: rows.length },
     engines, comparison: { independent: compareEngines(by('crypto', true), by('tn', true), copts),
