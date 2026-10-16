@@ -64,3 +64,11 @@ export function applyEvaluation(setup, evaluation, nowIso) {
   setup.evaluation = evaluation;
   return audit;
 }
+
+// Meta per mesin: kapan pelacakan dimulai. Setup yang sudah ada sebelum itu tidak diketahui waktunya.
+const metaFile = () => p('meta.json');
+export const loadMeta = () => {
+  const m = readJson(metaFile(), {});
+  return { trackingStartedUtc: {}, ...m };
+};
+export const saveMeta = (m) => writeJsonAtomic(metaFile(), m);
