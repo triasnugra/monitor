@@ -1,0 +1,24 @@
+name: Discover (amati struktur situs sumber)
+on: workflow_dispatch
+permissions: { contents: write }
+concurrency: { group: benchmark, cancel-in-progress: false }
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: node src/tools/discover.js
+      - name: Binance reachability dari runner
+        run: |
+          for b in https://data-api.binance.vision https://api.binance.com; do
+            echo "$b -> $(curl -s -o /dev/null -w '%{http_code}' "$b/api/v3/klines?symbol=SUIUSDT&interval=15m&limit=1")" | tee -a data/discovery/binance-check.txt
+          done
+      - run: |
+          git config user.name "benchmark-bot"; git config user.email "bot@users.noreply.github.com"
+          git add data/discovery; git commit -m "discovery: snapshot" || exit 0
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push
