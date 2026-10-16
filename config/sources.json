@@ -1,10 +1,10 @@
 {
-  "_note": "Nilai 'verified' hanya diisi true jika dibuktikan lewat data/discovery (lihat docs/VERIFIED.md). null = BELUM diverifikasi, scraper tidak akan menebak.",
+  "_note": "cardSelector hanya dokumentasi: struktur DOM Mesin 1 diverifikasi dari data/discovery/crypto/rendered.html (lihat docs/VERIFIED.md).",
   "crypto": {
     "label": "Mesin 1",
     "url": "https://triasnugra.github.io/crypto/",
     "scanButtonText": "Pindai ulang",
-    "cardSelector": null,
+    "cardSelector": "#setups > article.c",
     "noSetupMarkerText": null,
     "gotoTimeoutMs": 45000,
     "scanTimeoutMs": 120000,
@@ -13,15 +13,13 @@
   "tn": {
     "label": "Mesin 2",
     "url": "https://triasnugra.github.io/tn/",
-    "scanButtonText": "Scan ulang",
-  "cardSelector": "div.c > div.g4",
-  "noSetupMarkerText": "Sinyal setup",
-    "gotoTimeoutMs": 45000,
-    "scanTimeoutMs": 120000,
-    "quietMs": 4000
+    "journalUrl": "https://triasnugra.github.io/tn/data/journal.json",
+    "forwardReportUrl": "https://triasnugra.github.io/tn/data/forward-report.json",
+    "fetchTimeoutMs": 30000,
+    "retries": 3
   },
   "view": {
     "url": "https://triasnugra.github.io/view/",
-    "note": "Dashboard harga; teksnya menyatakan data berasal dari Binance. Tidak dipakai sebagai sumber candle."
+    "note": "Dashboard harga; tidak dipakai sebagai sumber candle."
   }
 }
