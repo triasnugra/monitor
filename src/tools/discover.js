@@ -11,8 +11,16 @@ const sources = JSON.parse(fs.readFileSync(new URL('../../config/sources.json', 
 function inspectPage() {
   const sig = (el) => el.tagName.toLowerCase() + (el.className && typeof el.className === 'string' ? '.' + el.className.trim().split(/\s+/).join('.') : '');
   const path = (el) => { const p = []; for (let e = el; e && e !== document.body && p.length < 5; e = e.parentElement) p.unshift(sig(e)); return p.join(' > '); };
-  const hit = [...document.querySelectorAll('body *')].filter((e) => {
-    const t = e.innerText || ''; return t.length > 20 && t.length < 1200 && /\bTP\b/i.test(t) && /\bSL\b/i.test(t);
+ const hit = [...document.querySelectorAll('body *')].filter((e) => {
+  const t = e.innerText || '';
+  return t.length > 20 &&
+    t.length < 1200 &&
+    /\bTP\d?\b/i.test(t) &&
+    /\bSL\b/i.test(t);
+}).filter((e) => ![...e.children].some((c) =>
+  /\bTP\d?\b/i.test(c.innerText || '') &&
+  /\bSL\b/i.test(c.innerText || '')
+));
   }).filter((e) => ![...e.children].some((c) => /\bTP\b/i.test(c.innerText || '') && /\bSL\b/i.test(c.innerText || '')));
   const groups = {};
   for (const e of hit) { const k = path(e); (groups[k] ||= []).push((e.innerText || '').slice(0, 400)); }
