@@ -22,6 +22,7 @@ jobs:
       - run: npm test
       - run: npx playwright install --with-deps chromium
       - name: Collect + evaluate + build
+        timeout-minutes: 10          # kegagalan menggantung terlihat jelas, bukan menghabiskan seluruh job
         run: node src/index.js all
       - name: Commit data (retry saat konflik)
         run: |
