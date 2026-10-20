@@ -1,6 +1,6 @@
 {
-  "generatedAtUtc": "2026-10-20T19:55:39.020Z",
-  "generatedAtWib": "2026-10-21 02:55",
+  "generatedAtUtc": "2026-10-20T22:20:54.853Z",
+  "generatedAtWib": "2026-10-21 05:20",
   "counts": {
     "setups": 474
   },
@@ -36060,7 +36060,7 @@
   },
   "diagnostics": {
     "lastRun": {
-      "runAtUtc": "2026-10-20T19:54:43.324Z",
+      "runAtUtc": "2026-10-20T22:19:48.517Z",
       "engines": {
         "crypto": {
           "status": "ZERO_CARDS_UNCONFIRMED",
@@ -36071,7 +36071,7 @@
           "warnings": [],
           "emptyKind": "ZERO_CARDS_UNCONFIRMED",
           "httpStatus": 200,
-          "durationMs": 4616,
+          "durationMs": 5160,
           "forward": null,
           "trackingStarted": false
         },
@@ -36084,7 +36084,7 @@
           "warnings": [],
           "emptyKind": null,
           "httpStatus": 200,
-          "durationMs": 534,
+          "durationMs": 280,
           "forward": {
             "ready": false,
             "locked": true,
@@ -36103,8 +36103,8 @@
         }
       },
       "evaluation": {
-        "checked": 180,
-        "changed": 2,
+        "checked": 178,
+        "changed": 0,
         "errors": []
       },
       "fatal": null
@@ -37556,6 +37556,56 @@
         "evaluation": {
           "checked": 180,
           "changed": 2,
+          "errors": []
+        },
+        "fatal": null
+      },
+      {
+        "runAtUtc": "2026-10-20T22:19:48.517Z",
+        "engines": {
+          "crypto": {
+            "status": "ZERO_CARDS_UNCONFIRMED",
+            "cards": 0,
+            "parsed": 0,
+            "added": 0,
+            "errors": [],
+            "warnings": [],
+            "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+            "httpStatus": 200,
+            "durationMs": 5160,
+            "forward": null,
+            "trackingStarted": false
+          },
+          "tn": {
+            "status": "OK",
+            "cards": 125,
+            "parsed": 125,
+            "added": 0,
+            "errors": [],
+            "warnings": [],
+            "emptyKind": null,
+            "httpStatus": 200,
+            "durationMs": 280,
+            "forward": {
+              "ready": false,
+              "locked": true,
+              "counts": {
+                "tercatat_sesuai_protokol": 60,
+                "selesai": 37,
+                "menunggu": 23,
+                "terisi": 37,
+                "minggu_berbeda": 2,
+                "diabaikan_mesin_lain": 0,
+                "dilewati_dedupe": 50
+              },
+              "dibuat": "2026-10-20T19:26:35.192Z"
+            },
+            "trackingStarted": false
+          }
+        },
+        "evaluation": {
+          "checked": 178,
+          "changed": 0,
           "errors": []
         },
         "fatal": null
