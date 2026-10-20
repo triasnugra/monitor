@@ -1,6 +1,6 @@
 {
-  "generatedAtUtc": "2026-10-20T22:20:54.853Z",
-  "generatedAtWib": "2026-10-21 05:20",
+  "generatedAtUtc": "2026-10-20T23:02:24.787Z",
+  "generatedAtWib": "2026-10-21 06:02",
   "counts": {
     "setups": 474
   },
@@ -11,11 +11,11 @@
           "published": 174,
           "triggered": 75,
           "counts": {
-            "PENDING": 69,
+            "PENDING": 66,
             "TP": 0,
             "SL": 45,
             "CANCELLED": 0,
-            "EXPIRED": 27,
+            "EXPIRED": 30,
             "INVALID": 33,
             "AMBIGUOUS": 0
           },
@@ -996,11 +996,11 @@
             "published": 5,
             "triggered": 1,
             "counts": {
-              "PENDING": 3,
+              "PENDING": 0,
               "TP": 0,
               "SL": 1,
               "CANCELLED": 0,
-              "EXPIRED": 0,
+              "EXPIRED": 3,
               "INVALID": 1,
               "AMBIGUOUS": 0
             },
@@ -1393,11 +1393,11 @@
             "published": 118,
             "triggered": 45,
             "counts": {
-              "PENDING": 58,
+              "PENDING": 55,
               "TP": 0,
               "SL": 22,
               "CANCELLED": 0,
-              "EXPIRED": 9,
+              "EXPIRED": 12,
               "INVALID": 29,
               "AMBIGUOUS": 0
             },
@@ -1470,11 +1470,11 @@
             "published": 155,
             "triggered": 68,
             "counts": {
-              "PENDING": 61,
+              "PENDING": 58,
               "TP": 0,
               "SL": 44,
               "CANCELLED": 0,
-              "EXPIRED": 19,
+              "EXPIRED": 22,
               "INVALID": 31,
               "AMBIGUOUS": 0
             },
@@ -1569,11 +1569,11 @@
             "published": 26,
             "triggered": 11,
             "counts": {
-              "PENDING": 11,
+              "PENDING": 9,
               "TP": 0,
               "SL": 10,
               "CANCELLED": 0,
-              "EXPIRED": 1,
+              "EXPIRED": 3,
               "INVALID": 4,
               "AMBIGUOUS": 0
             },
@@ -1713,11 +1713,11 @@
             "published": 23,
             "triggered": 10,
             "counts": {
-              "PENDING": 12,
+              "PENDING": 11,
               "TP": 0,
               "SL": 7,
               "CANCELLED": 0,
-              "EXPIRED": 0,
+              "EXPIRED": 1,
               "INVALID": 4,
               "AMBIGUOUS": 0
             },
@@ -4127,11 +4127,11 @@
           "published": 349,
           "triggered": 165,
           "counts": {
-            "PENDING": 158,
+            "PENDING": 150,
             "TP": 3,
             "SL": 87,
             "CANCELLED": 0,
-            "EXPIRED": 68,
+            "EXPIRED": 76,
             "INVALID": 33,
             "AMBIGUOUS": 0
           },
@@ -5115,11 +5115,11 @@
             "published": 14,
             "triggered": 5,
             "counts": {
-              "PENDING": 8,
+              "PENDING": 0,
               "TP": 0,
               "SL": 5,
               "CANCELLED": 0,
-              "EXPIRED": 0,
+              "EXPIRED": 8,
               "INVALID": 1,
               "AMBIGUOUS": 0
             },
@@ -5515,11 +5515,11 @@
             "published": 266,
             "triggered": 124,
             "counts": {
-              "PENDING": 143,
+              "PENDING": 135,
               "TP": 2,
               "SL": 57,
               "CANCELLED": 0,
-              "EXPIRED": 35,
+              "EXPIRED": 43,
               "INVALID": 29,
               "AMBIGUOUS": 0
             },
@@ -5592,11 +5592,11 @@
             "published": 323,
             "triggered": 155,
             "counts": {
-              "PENDING": 146,
+              "PENDING": 138,
               "TP": 3,
               "SL": 86,
               "CANCELLED": 0,
-              "EXPIRED": 57,
+              "EXPIRED": 65,
               "INVALID": 31,
               "AMBIGUOUS": 0
             },
@@ -5691,11 +5691,11 @@
             "published": 90,
             "triggered": 50,
             "counts": {
-              "PENDING": 46,
+              "PENDING": 42,
               "TP": 0,
               "SL": 34,
               "CANCELLED": 0,
-              "EXPIRED": 6,
+              "EXPIRED": 10,
               "INVALID": 4,
               "AMBIGUOUS": 0
             },
@@ -5835,11 +5835,11 @@
             "published": 42,
             "triggered": 20,
             "counts": {
-              "PENDING": 28,
+              "PENDING": 24,
               "TP": 0,
               "SL": 10,
               "CANCELLED": 0,
-              "EXPIRED": 0,
+              "EXPIRED": 4,
               "INVALID": 4,
               "AMBIGUOUS": 0
             },
@@ -9595,15 +9595,15 @@
       "timeframe": "4H",
       "originalStatus": "Menunggu retest",
       "latestOriginalStatus": "Menunggu retest",
-      "result": "PENDING",
-      "resultWib": null,
-      "resultTimeSource": null,
+      "result": "EXPIRED",
+      "resultWib": "2026-10-21 05:35",
+      "resultTimeSource": "candle",
       "entryWib": null,
       "r": null,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "warnings": [],
       "clusterId": "crypto-3ee0bc267df7",
       "isPrimary": true,
@@ -10674,15 +10674,15 @@
       "timeframe": "4H",
       "originalStatus": "Menunggu retest",
       "latestOriginalStatus": "Menunggu retest",
-      "result": "PENDING",
-      "resultWib": null,
-      "resultTimeSource": null,
+      "result": "EXPIRED",
+      "resultWib": "2026-10-21 05:35",
+      "resultTimeSource": "candle",
       "entryWib": null,
       "r": null,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "warnings": [],
       "clusterId": "crypto-803db84b1314",
       "isPrimary": false,
@@ -11378,15 +11378,15 @@
       "timeframe": "4H",
       "originalStatus": "Menunggu retest",
       "latestOriginalStatus": "Menunggu retest",
-      "result": "PENDING",
-      "resultWib": null,
-      "resultTimeSource": null,
+      "result": "EXPIRED",
+      "resultWib": "2026-10-21 05:35",
+      "resultTimeSource": "candle",
       "entryWib": null,
       "r": null,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "warnings": [],
       "clusterId": "crypto-803db84b1314",
       "isPrimary": false,
@@ -12933,15 +12933,15 @@
       "timeframe": "4H",
       "originalStatus": "Menunggu retest",
       "latestOriginalStatus": "Menunggu retest",
-      "result": "PENDING",
-      "resultWib": null,
-      "resultTimeSource": null,
+      "result": "EXPIRED",
+      "resultWib": "2026-10-21 05:35",
+      "resultTimeSource": "candle",
       "entryWib": null,
       "r": null,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "warnings": [],
       "clusterId": "crypto-803db84b1314",
       "isPrimary": true,
@@ -14576,15 +14576,15 @@
       "timeframe": "4H",
       "originalStatus": "Menunggu retest",
       "latestOriginalStatus": "Menunggu retest",
-      "result": "PENDING",
-      "resultWib": null,
-      "resultTimeSource": null,
+      "result": "EXPIRED",
+      "resultWib": "2026-10-21 05:36",
+      "resultTimeSource": "candle",
       "entryWib": null,
       "r": null,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "warnings": [],
       "clusterId": "crypto-d46e1f3eff95",
       "isPrimary": false,
@@ -14989,15 +14989,15 @@
       "timeframe": "4H",
       "originalStatus": "Menunggu retest",
       "latestOriginalStatus": "Menunggu retest",
-      "result": "PENDING",
-      "resultWib": null,
-      "resultTimeSource": null,
+      "result": "EXPIRED",
+      "resultWib": "2026-10-21 05:36",
+      "resultTimeSource": "candle",
       "entryWib": null,
       "r": null,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "warnings": [],
       "clusterId": "crypto-d46e1f3eff95",
       "isPrimary": false,
@@ -15552,15 +15552,15 @@
       "timeframe": "4H",
       "originalStatus": "Menunggu retest",
       "latestOriginalStatus": "Menunggu retest",
-      "result": "PENDING",
-      "resultWib": null,
-      "resultTimeSource": null,
+      "result": "EXPIRED",
+      "resultWib": "2026-10-21 05:36",
+      "resultTimeSource": "candle",
       "entryWib": null,
       "r": null,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "warnings": [],
       "clusterId": "crypto-d46e1f3eff95",
       "isPrimary": false,
@@ -16526,15 +16526,15 @@
       "timeframe": "4H",
       "originalStatus": "Menunggu retest",
       "latestOriginalStatus": "Menunggu retest",
-      "result": "PENDING",
-      "resultWib": null,
-      "resultTimeSource": null,
+      "result": "EXPIRED",
+      "resultWib": "2026-10-21 05:36",
+      "resultTimeSource": "candle",
       "entryWib": null,
       "r": null,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "warnings": [],
       "clusterId": "crypto-d46e1f3eff95",
       "isPrimary": true,
@@ -28164,15 +28164,15 @@
         "timeframe": "4H",
         "originalStatus": "Menunggu retest",
         "latestOriginalStatus": "Menunggu retest",
-        "result": "PENDING",
-        "resultWib": null,
-        "resultTimeSource": null,
+        "result": "EXPIRED",
+        "resultWib": "2026-10-21 05:35",
+        "resultTimeSource": "candle",
         "entryWib": null,
         "r": null,
         "notes": [
-          "Menunggu entry tersentuh."
+          "EXPIRED: TP_REACHED_BEFORE_ENTRY"
         ],
-        "reasonCode": "WAITING_ENTRY",
+        "reasonCode": "TP_REACHED_BEFORE_ENTRY",
         "warnings": [],
         "clusterId": "crypto-803db84b1314",
         "isPrimary": false,
@@ -28682,15 +28682,15 @@
         "timeframe": "4H",
         "originalStatus": "Menunggu retest",
         "latestOriginalStatus": "Menunggu retest",
-        "result": "PENDING",
-        "resultWib": null,
-        "resultTimeSource": null,
+        "result": "EXPIRED",
+        "resultWib": "2026-10-21 05:35",
+        "resultTimeSource": "candle",
         "entryWib": null,
         "r": null,
         "notes": [
-          "Menunggu entry tersentuh."
+          "EXPIRED: TP_REACHED_BEFORE_ENTRY"
         ],
-        "reasonCode": "WAITING_ENTRY",
+        "reasonCode": "TP_REACHED_BEFORE_ENTRY",
         "warnings": [],
         "clusterId": "crypto-803db84b1314",
         "isPrimary": false,
@@ -30017,15 +30017,15 @@
         "timeframe": "4H",
         "originalStatus": "Menunggu retest",
         "latestOriginalStatus": "Menunggu retest",
-        "result": "PENDING",
-        "resultWib": null,
-        "resultTimeSource": null,
+        "result": "EXPIRED",
+        "resultWib": "2026-10-21 05:36",
+        "resultTimeSource": "candle",
         "entryWib": null,
         "r": null,
         "notes": [
-          "Menunggu entry tersentuh."
+          "EXPIRED: TP_REACHED_BEFORE_ENTRY"
         ],
-        "reasonCode": "WAITING_ENTRY",
+        "reasonCode": "TP_REACHED_BEFORE_ENTRY",
         "warnings": [],
         "clusterId": "crypto-d46e1f3eff95",
         "isPrimary": false,
@@ -30393,15 +30393,15 @@
         "timeframe": "4H",
         "originalStatus": "Menunggu retest",
         "latestOriginalStatus": "Menunggu retest",
-        "result": "PENDING",
-        "resultWib": null,
-        "resultTimeSource": null,
+        "result": "EXPIRED",
+        "resultWib": "2026-10-21 05:36",
+        "resultTimeSource": "candle",
         "entryWib": null,
         "r": null,
         "notes": [
-          "Menunggu entry tersentuh."
+          "EXPIRED: TP_REACHED_BEFORE_ENTRY"
         ],
-        "reasonCode": "WAITING_ENTRY",
+        "reasonCode": "TP_REACHED_BEFORE_ENTRY",
         "warnings": [],
         "clusterId": "crypto-d46e1f3eff95",
         "isPrimary": false,
@@ -30919,15 +30919,15 @@
         "timeframe": "4H",
         "originalStatus": "Menunggu retest",
         "latestOriginalStatus": "Menunggu retest",
-        "result": "PENDING",
-        "resultWib": null,
-        "resultTimeSource": null,
+        "result": "EXPIRED",
+        "resultWib": "2026-10-21 05:36",
+        "resultTimeSource": "candle",
         "entryWib": null,
         "r": null,
         "notes": [
-          "Menunggu entry tersentuh."
+          "EXPIRED: TP_REACHED_BEFORE_ENTRY"
         ],
-        "reasonCode": "WAITING_ENTRY",
+        "reasonCode": "TP_REACHED_BEFORE_ENTRY",
         "warnings": [],
         "clusterId": "crypto-d46e1f3eff95",
         "isPrimary": false,
@@ -36060,7 +36060,7 @@
   },
   "diagnostics": {
     "lastRun": {
-      "runAtUtc": "2026-10-20T22:19:48.517Z",
+      "runAtUtc": "2026-10-20T23:01:33.278Z",
       "engines": {
         "crypto": {
           "status": "ZERO_CARDS_UNCONFIRMED",
@@ -36071,7 +36071,7 @@
           "warnings": [],
           "emptyKind": "ZERO_CARDS_UNCONFIRMED",
           "httpStatus": 200,
-          "durationMs": 5160,
+          "durationMs": 4311,
           "forward": null,
           "trackingStarted": false
         },
@@ -36084,7 +36084,7 @@
           "warnings": [],
           "emptyKind": null,
           "httpStatus": 200,
-          "durationMs": 280,
+          "durationMs": 318,
           "forward": {
             "ready": false,
             "locked": true,
@@ -36097,14 +36097,14 @@
               "diabaikan_mesin_lain": 0,
               "dilewati_dedupe": 50
             },
-            "dibuat": "2026-10-20T19:26:35.192Z"
+            "dibuat": "2026-10-20T22:29:54.443Z"
           },
           "trackingStarted": false
         }
       },
       "evaluation": {
         "checked": 178,
-        "changed": 0,
+        "changed": 8,
         "errors": []
       },
       "fatal": null
@@ -37606,6 +37606,56 @@
         "evaluation": {
           "checked": 178,
           "changed": 0,
+          "errors": []
+        },
+        "fatal": null
+      },
+      {
+        "runAtUtc": "2026-10-20T23:01:33.278Z",
+        "engines": {
+          "crypto": {
+            "status": "ZERO_CARDS_UNCONFIRMED",
+            "cards": 0,
+            "parsed": 0,
+            "added": 0,
+            "errors": [],
+            "warnings": [],
+            "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+            "httpStatus": 200,
+            "durationMs": 4311,
+            "forward": null,
+            "trackingStarted": false
+          },
+          "tn": {
+            "status": "OK",
+            "cards": 125,
+            "parsed": 125,
+            "added": 0,
+            "errors": [],
+            "warnings": [],
+            "emptyKind": null,
+            "httpStatus": 200,
+            "durationMs": 318,
+            "forward": {
+              "ready": false,
+              "locked": true,
+              "counts": {
+                "tercatat_sesuai_protokol": 60,
+                "selesai": 37,
+                "menunggu": 23,
+                "terisi": 37,
+                "minggu_berbeda": 2,
+                "diabaikan_mesin_lain": 0,
+                "dilewati_dedupe": 50
+              },
+              "dibuat": "2026-10-20T22:29:54.443Z"
+            },
+            "trackingStarted": false
+          }
+        },
+        "evaluation": {
+          "checked": 178,
+          "changed": 8,
           "errors": []
         },
         "fatal": null
