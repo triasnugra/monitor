@@ -1,30 +1,41 @@
-// Audit satu setup: menampilkan evaluasi dan jejak candle 1 menit (Binance) agar bisa dicek manual di TradingView.
-// Pemakaian: node scripts/audit-setup.mjs <setupId> [--hours=72]   (butuh akses Binance: jalankan di GitHub Actions)
+// Audit setup: hasil evaluator + jejak candle 1 menit (Binance), untuk dicek manual di TradingView.
+// Pemakaian:  node scripts/audit-setup.mjs <setupId>
+//             node scripts/audit-setup.mjs --ticker=WLD --engine=crypto --result=EXPIRED --max=3
+// Butuh akses Binance (jalankan lewat workflow "Audit setup"). Waktu di keluaran: UTC dan WIB.
 import fs from 'node:fs';
 import path from 'node:path';
 import { createBinanceProvider } from '../src/price-data/binance.js';
 import { evaluateSetup } from '../src/evaluator/evaluate.js';
-import { traceCandles } from '../src/evaluator/trace.js';
+import { traceCandles, selectSetups } from '../src/evaluator/trace.js';
+import { toWib } from '../src/util/time.js';
 
-const id = process.argv[2];
-if (!id) { console.error('pakai: node scripts/audit-setup.mjs <setupId>'); process.exit(2); }
-const hours = Number((process.argv.find((a) => a.startsWith('--hours=')) || '--hours=72').split('=')[1]);
+const args = process.argv.slice(2);
+const flag = (k) => (args.find((a) => a.startsWith(`--${k}=`)) || '').split('=')[1] || undefined;
+const filters = { id: args.find((a) => !a.startsWith('--')), ticker: flag('ticker'), engine: flag('engine'), result: flag('result'), max: flag('max') };
+if (!filters.id && !filters.ticker && !filters.result) { console.error('Beri setupId atau --ticker/--result.'); process.exit(2); }
+const hours = Number(flag('hours') || 72);
+
 const dir = path.join(process.env.DATA_DIR || 'data', 'setups');
-const all = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
-const s = all.find((x) => x.setupId === id);
-if (!s) { console.error('setupId tidak ditemukan:', id); process.exit(1); }
+const all = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))) : [];
+const picked = selectSetups(all, filters);
+if (!picked.length) { console.log('Tidak ada setup yang cocok dengan filter.'); process.exit(0); }
 
 const settings = JSON.parse(fs.readFileSync(new URL('../config/settings.json', import.meta.url), 'utf8'));
 const provider = createBinanceProvider({ bases: settings.binanceBaseUrls });
-const a = Date.parse(s.analysisTimeUtc);
-const end = Math.min(Date.now(), a + hours * 3600e3);
-const candles = await provider.getCandles(s.symbol, '1m', Math.floor(a / 60e3) * 60e3, end);
-const ev = await evaluateSetup(s, provider, { now: Date.now(), cfg: settings });
-
-console.log(JSON.stringify({ setupId: s.setupId, symbol: s.symbol, direction: s.direction, analysisUtc: s.analysisTimeUtc,
-  entry: s.entryPrice ?? s.entryRange, tp1: s.takeProfit?.[0], sl: s.stopLoss, hasil: ev.result, alasan: ev.reasonCode,
-  entryTerpicu: ev.entryTimeUtc, hasilUtc: ev.resultTimeUtc, interval: ev.interval, candleDipakai: ev.candlesUsed }, null, 2));
-console.log('\nJejak candle 1m (ENTRY/TP/SL = level tersentuh di menit itu):');
-for (const r of traceCandles(s, candles).filter((r) => r.touches !== '-').slice(0, 40)) console.log(JSON.stringify(r));
-console.log('(hanya menit yang menyentuh level yang ditampilkan; untuk seluruh candle cek di TradingView BINANCE:' + s.symbol + ', timeframe 1m)');
-
+for (const s of picked) {
+  const a = Date.parse(s.analysisTimeUtc), end = Math.min(Date.now(), a + hours * 3600e3);
+  console.log(`\n## ${s.ticker} ${s.direction} (${s.engine}) id=${s.setupId}`);
+  try {
+    const candles = await provider.getCandles(s.symbol, '1m', Math.floor(a / 60e3) * 60e3, end);
+    const ev = await evaluateSetup(s, provider, { now: Date.now(), cfg: settings });
+    console.log(`Analisis : ${s.analysisTimeUtc} UTC = ${toWib(a)} WIB`);
+    console.log(`Level    : entry ${s.entryPrice ?? JSON.stringify(s.entryRange)} | TP1 ${s.takeProfit?.[0]} | SL ${s.stopLoss}`);
+    console.log(`Hasil    : ${ev.result} (${ev.reasonCode ?? '-'})  entry terpicu: ${ev.entryTimeUtc ?? '-'}  hasil: ${ev.resultTimeUtc ?? '-'}`);
+    console.log(`Harga saat analisis (open candle 1m pertama): ${ev.priceAtAnalysis}`);
+    console.log('Menit yang menyentuh level (UTC | WIB | O H L C | level):');
+    const rows = traceCandles(s, candles).filter((r) => r.touches !== '-').slice(0, 25);
+    for (const r of rows) console.log(`  ${r.t.slice(0, 16)}Z | ${toWib(r.t)} | ${r.o} ${r.h} ${r.l} ${r.c} | ${r.touches}`);
+    if (!rows.length) console.log('  (tidak ada candle yang menyentuh entry/TP/SL dalam jendela ' + hours + ' jam)');
+    console.log(`Cek di TradingView: BINANCE:${s.symbol}, timeframe 1m, zona waktu WIB atau UTC sesuai kolom di atas.`);
+  } catch (e) { console.log('GAGAL mengambil data:', String(e.message).slice(0, 160)); }
+}
