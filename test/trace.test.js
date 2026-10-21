@@ -18,3 +18,13 @@ test('jejak: candle yang menyentuh entry dan SL sekaligus ditandai keduanya', ()
   const r = traceCandles(setup, [{ t: T, o: 0.46, h: 0.46, l: 0.44, c: 0.45 }]);
   assert.equal(r[0].touches, 'ENTRY SL');
 });
+
+import { selectSetups } from '../src/evaluator/trace.js';
+test('selectSetups: filter koin/mesin/hasil, terbaru dulu, dibatasi max', () => {
+  const mk = (id, ticker, engine, result, t) => ({ setupId: id, ticker, engine, analysisTimeUtc: t, evaluation: { result } });
+  const all = [mk('a', 'WLD', 'crypto', 'EXPIRED', '2026-10-19T10:00:00Z'), mk('b', 'WLD', 'crypto', 'EXPIRED', '2026-10-20T10:00:00Z'),
+    mk('c', 'WLD', 'tn', 'SL', '2026-10-18T10:00:00Z'), mk('d', 'ETH', 'crypto', 'EXPIRED', '2026-10-21T10:00:00Z')];
+  assert.deepEqual(selectSetups(all, { ticker: 'wld', engine: 'crypto', result: 'EXPIRED' }).map((s) => s.setupId), ['b', 'a']);
+  assert.equal(selectSetups(all, { result: 'EXPIRED', max: 1 }).length, 1);
+  assert.deepEqual(selectSetups(all, { id: 'c' }).map((s) => s.setupId), ['c']);
+});
