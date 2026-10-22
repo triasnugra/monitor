@@ -17,6 +17,9 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci
+      - name: Struktur data
+        run: |
+          { echo '```'; echo '== isi data/ =='; ls -la data 2>/dev/null | head -25; echo '== data/setups =='; ls data/setups 2>/dev/null | head -20; echo '```'; } | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Audit
         env:
           IN_TICKER: ${{ inputs.ticker }}
