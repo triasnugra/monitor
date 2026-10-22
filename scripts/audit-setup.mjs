@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createBinanceProvider } from '../src/price-data/binance.js';
 import { evaluateSetup } from '../src/evaluator/evaluate.js';
-import { traceCandles, selectSetups } from '../src/evaluator/trace.js';
+import { traceCandles, selectSetups, describeCoverage } from '../src/evaluator/trace.js';
 import { toWib } from '../src/util/time.js';
 
 const args = process.argv.slice(2);
@@ -15,10 +15,34 @@ const filters = { id: args.find((a) => !a.startsWith('--')), ticker: flag('ticke
 if (!filters.id && !filters.ticker && !filters.result) { console.error('Beri setupId atau --ticker/--result.'); process.exit(2); }
 const hours = Number(flag('hours') || 72);
 
-const dir = path.join(process.env.DATA_DIR || 'data', 'setups');
-const all = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))) : [];
+// Membaca data: folder bulanan data/setups/*.json, atau berkas lama data/setups.json. Melaporkan sumbernya.
+function loadAll() {
+  const base = process.env.DATA_DIR || 'data', dir = path.join(base, 'setups'), legacy = path.join(base, 'setups.json');
+  if (fs.existsSync(dir) && fs.statSync(dir).isDirectory()) {
+    const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort();
+    return { all: files.flatMap((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))), source: `${dir}/ (${files.length} berkas bulanan: ${files.join(', ') || '-'})` };
+  }
+  if (fs.existsSync(legacy)) return { all: JSON.parse(fs.readFileSync(legacy, 'utf8')), source: `${legacy} (format lama, satu berkas)` };
+  return { all: [], source: `TIDAK DITEMUKAN: ${dir}/ maupun ${legacy}` };
+}
+const { all, source } = loadAll();
+console.log(`Sumber data: ${source}`);
+console.log(`Total setup terbaca: ${all.length}`);
 const picked = selectSetups(all, filters);
-if (!picked.length) { console.log('Tidak ada setup yang cocok dengan filter.'); process.exit(0); }
+if (!picked.length) {
+  const c = describeCoverage(all, filters);
+  console.log('\nTidak ada setup yang cocok dengan filter.');
+  if (!c.total) console.log('PENYEBAB: tidak ada data setup yang terbaca (lihat "Sumber data" di atas).');
+  else {
+    console.log(`Mesin yang ada di data: ${JSON.stringify(c.engines)}  (nama yang valid: ${Object.keys(c.engines).join(', ')})`);
+    if (c.engineKnown === false) console.log(`PENYEBAB: tidak ada mesin bernama "${filters.engine}". Mesin 1 = crypto, Mesin 2 = tn.`);
+    if (c.engineKnown !== false) console.log(`Hasil evaluator pada lingkup ini: ${JSON.stringify(c.byResult)}`);
+    if (c.engineKnown === false) { /* nama mesin salah: baris koin tidak informatif */ }
+    else if (c.tickerKnown === false) console.log(`PENYEBAB: koin ${String(filters.ticker).toUpperCase()} tidak ada pada lingkup ini. Koin yang ada: ${c.tickers.join(', ')}`);
+    else if (filters.result && filters.result !== 'any') console.log(`Catatan: koin ada, tetapi tidak ada yang berstatus ${filters.result}. Coba hasil "any".`);
+  }
+  process.exit(0);
+}
 
 const settings = JSON.parse(fs.readFileSync(new URL('../config/settings.json', import.meta.url), 'utf8'));
 const provider = createBinanceProvider({ bases: settings.binanceBaseUrls });
