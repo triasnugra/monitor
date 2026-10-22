@@ -28,3 +28,15 @@ test('selectSetups: filter koin/mesin/hasil, terbaru dulu, dibatasi max', () => 
   assert.equal(selectSetups(all, { result: 'EXPIRED', max: 1 }).length, 1);
   assert.deepEqual(selectSetups(all, { id: 'c' }).map((s) => s.setupId), ['c']);
 });
+
+import { describeCoverage } from '../src/evaluator/trace.js';
+test('describeCoverage: menjelaskan mesin salah nama, koin tak ada, dan data kosong', () => {
+  const mk = (ticker, engine, result) => ({ ticker, engine, evaluation: { result } });
+  const all = [mk('WLD', 'crypto', 'EXPIRED'), mk('TIA', 'tn', 'SL'), mk('TIA', 'tn', 'EXPIRED')];
+  const wrongEngine = describeCoverage(all, { engine: 'mesin2', ticker: 'TIA' });
+  assert.equal(wrongEngine.engineKnown, false);
+  const wrongPair = describeCoverage(all, { engine: 'crypto', ticker: 'TIA' });   // TIA ada, tetapi di mesin tn
+  assert.equal(wrongPair.engineKnown, true); assert.equal(wrongPair.tickerKnown, false); assert.deepEqual(wrongPair.tickers, ['WLD']);
+  assert.deepEqual(describeCoverage(all, { engine: 'tn', ticker: 'tia' }).byResult, { SL: 1, EXPIRED: 1 });
+  assert.equal(describeCoverage([], {}).total, 0);
+});
