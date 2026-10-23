@@ -1,6 +1,6 @@
 {
-  "generatedAtUtc": "2026-10-23T17:47:35.572Z",
-  "generatedAtWib": "2026-10-24 00:47",
+  "generatedAtUtc": "2026-10-23T21:10:20.254Z",
+  "generatedAtWib": "2026-10-24 04:10",
   "counts": {
     "setups": 555
   },
@@ -10943,7 +10943,7 @@
       "reason": "sweep Monday Low lalu reclaim, searah tren",
       "timeframe": null,
       "originalStatus": "menunggu",
-      "latestOriginalStatus": "menunggu",
+      "latestOriginalStatus": "SL",
       "result": "EXPIRED",
       "resultWib": "2026-10-22 08:23",
       "resultTimeSource": "candle",
@@ -11796,7 +11796,7 @@
       "reason": "sweep Monday Low lalu reclaim, searah tren",
       "timeframe": null,
       "originalStatus": "menunggu",
-      "latestOriginalStatus": "menunggu",
+      "latestOriginalStatus": "SL",
       "result": "EXPIRED",
       "resultWib": "2026-10-22 01:23",
       "resultTimeSource": "candle",
@@ -31619,7 +31619,7 @@
         "reason": "sweep Monday Low lalu reclaim, searah tren",
         "timeframe": null,
         "originalStatus": "menunggu",
-        "latestOriginalStatus": "menunggu",
+        "latestOriginalStatus": "SL",
         "result": "EXPIRED",
         "resultWib": "2026-10-22 08:23",
         "resultTimeSource": "candle",
@@ -40560,7 +40560,7 @@
   },
   "diagnostics": {
     "lastRun": {
-      "runAtUtc": "2026-10-23T17:46:51.732Z",
+      "runAtUtc": "2026-10-23T21:09:47.841Z",
       "engines": {
         "crypto": {
           "status": "ZERO_CARDS_UNCONFIRMED",
@@ -40571,7 +40571,7 @@
           "warnings": [],
           "emptyKind": "ZERO_CARDS_UNCONFIRMED",
           "httpStatus": 200,
-          "durationMs": 4373,
+          "durationMs": 4323,
           "forward": null,
           "trackingStarted": false
         },
@@ -40584,27 +40584,27 @@
           "warnings": [],
           "emptyKind": null,
           "httpStatus": 200,
-          "durationMs": 217,
+          "durationMs": 301,
           "forward": {
             "ready": false,
             "locked": true,
             "counts": {
               "tercatat_sesuai_protokol": 97,
-              "selesai": 56,
-              "menunggu": 41,
-              "terisi": 46,
+              "selesai": 57,
+              "menunggu": 40,
+              "terisi": 47,
               "minggu_berbeda": 2,
               "diabaikan_mesin_lain": 0,
               "dilewati_dedupe": 94
             },
-            "dibuat": "2026-10-23T13:40:12.258Z"
+            "dibuat": "2026-10-23T18:02:16.680Z"
           },
           "trackingStarted": false
         }
       },
       "evaluation": {
-        "checked": 93,
-        "changed": 5,
+        "checked": 88,
+        "changed": 0,
         "errors": []
       },
       "fatal": null
@@ -42906,6 +42906,56 @@
         "evaluation": {
           "checked": 93,
           "changed": 5,
+          "errors": []
+        },
+        "fatal": null
+      },
+      {
+        "runAtUtc": "2026-10-23T21:09:47.841Z",
+        "engines": {
+          "crypto": {
+            "status": "ZERO_CARDS_UNCONFIRMED",
+            "cards": 0,
+            "parsed": 0,
+            "added": 0,
+            "errors": [],
+            "warnings": [],
+            "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+            "httpStatus": 200,
+            "durationMs": 4323,
+            "forward": null,
+            "trackingStarted": false
+          },
+          "tn": {
+            "status": "OK",
+            "cards": 206,
+            "parsed": 206,
+            "added": 0,
+            "errors": [],
+            "warnings": [],
+            "emptyKind": null,
+            "httpStatus": 200,
+            "durationMs": 301,
+            "forward": {
+              "ready": false,
+              "locked": true,
+              "counts": {
+                "tercatat_sesuai_protokol": 97,
+                "selesai": 57,
+                "menunggu": 40,
+                "terisi": 47,
+                "minggu_berbeda": 2,
+                "diabaikan_mesin_lain": 0,
+                "dilewati_dedupe": 94
+              },
+              "dibuat": "2026-10-23T18:02:16.680Z"
+            },
+            "trackingStarted": false
+          }
+        },
+        "evaluation": {
+          "checked": 88,
+          "changed": 0,
           "errors": []
         },
         "fatal": null
