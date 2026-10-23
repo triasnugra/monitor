@@ -2326,12 +2326,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "kedaluwarsa",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-04T06:48:00.000Z",
       "entryFill": 14.017,
       "resultTimeUtc": null,
@@ -2339,7 +2339,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 1892,
+      "candlesUsed": 1903,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -2398,8 +2398,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -2471,26 +2471,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "kedaluwarsa",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-04T06:48:00.000Z",
       "entryFill": 11.032,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 1892,
+      "resultTimeUtc": "2026-10-23T22:47:00.000Z",
+      "resultPrice": 8.9599,
+      "rMultiple": 2.000096525096527,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 1903,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "TP tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "TP"
     }
   },
   {
@@ -2543,8 +2544,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -2616,8 +2617,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -2689,8 +2690,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -2762,8 +2763,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -2834,8 +2835,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -2907,8 +2908,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -2979,8 +2980,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3052,8 +3053,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3124,8 +3125,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3197,8 +3198,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3269,8 +3270,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "kedaluwarsa",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3341,8 +3342,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3418,8 +3419,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3495,26 +3496,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "kedaluwarsa",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-16T12:35:00.000Z",
       "entryFill": 0.8897,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 949,
+      "resultTimeUtc": "2026-10-23T22:48:00.000Z",
+      "resultPrice": 0.72845,
+      "rMultiple": 1.9998759766836172,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 960,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "TP tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "TP"
     }
   },
   {
@@ -3572,8 +3574,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3649,8 +3651,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3739,8 +3741,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3829,8 +3831,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3906,8 +3908,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -3996,8 +3998,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4073,8 +4075,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4163,8 +4165,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4254,8 +4256,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4332,8 +4334,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4422,8 +4424,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4501,8 +4503,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4592,8 +4594,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4683,8 +4685,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4762,8 +4764,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4853,8 +4855,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -4944,8 +4946,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5022,8 +5024,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5112,8 +5114,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5203,8 +5205,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5294,8 +5296,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5385,8 +5387,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5476,8 +5478,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5554,8 +5556,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "kedaluwarsa",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5631,8 +5633,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5721,8 +5723,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5799,8 +5801,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5889,8 +5891,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -5967,8 +5969,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6057,8 +6059,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6148,8 +6150,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6226,8 +6228,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6303,8 +6305,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6380,8 +6382,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6457,8 +6459,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6534,8 +6536,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6611,8 +6613,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6701,8 +6703,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6792,8 +6794,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6869,8 +6871,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -6946,8 +6948,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7024,8 +7026,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7114,8 +7116,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7192,8 +7194,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7270,8 +7272,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7347,8 +7349,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "kedaluwarsa",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7424,8 +7426,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7501,8 +7503,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7579,8 +7581,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7656,8 +7658,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7733,8 +7735,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7811,8 +7813,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7888,8 +7890,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "kedaluwarsa",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -7965,12 +7967,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "kedaluwarsa",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-16T13:08:00.000Z",
       "entryFill": 105.41,
       "resultTimeUtc": null,
@@ -7978,7 +7980,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 746,
+      "candlesUsed": 757,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -8042,8 +8044,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8120,8 +8122,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8197,8 +8199,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8275,8 +8277,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8353,8 +8355,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "tidak terisi",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8430,8 +8432,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8508,8 +8510,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8585,8 +8587,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8663,8 +8665,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8741,8 +8743,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-16T09:14:58.371Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 47,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 48,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -8954,7 +8956,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T19:33:00.000Z",
       "entryFill": 6.886,
       "resultTimeUtc": null,
@@ -8962,7 +8964,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 705,
+      "candlesUsed": 716,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -9648,7 +9650,7 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-16T15:05:00.000Z",
       "entryFill": 2443,
       "resultTimeUtc": null,
@@ -9656,7 +9658,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 705,
+      "candlesUsed": 716,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -10137,7 +10139,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-17T21:32:00.000Z",
       "entryFill": 102.2,
       "resultTimeUtc": null,
@@ -10145,7 +10147,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 692,
+      "candlesUsed": 703,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -10206,7 +10208,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-19T08:04:00.000Z",
       "entryFill": 0.2,
       "resultTimeUtc": null,
@@ -10214,7 +10216,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 692,
+      "candlesUsed": 703,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -10275,7 +10277,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T19:33:00.000Z",
       "entryFill": 6.886,
       "resultTimeUtc": null,
@@ -10283,7 +10285,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 692,
+      "candlesUsed": 703,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -11388,7 +11390,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T19:33:00.000Z",
       "entryFill": 6.886,
       "resultTimeUtc": null,
@@ -11396,7 +11398,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 676,
+      "candlesUsed": 687,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -12360,7 +12362,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-17T21:32:00.000Z",
       "entryFill": 102.2,
       "resultTimeUtc": null,
@@ -12368,7 +12370,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 656,
+      "candlesUsed": 667,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -13402,7 +13404,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T19:33:00.000Z",
       "entryFill": 6.886,
       "resultTimeUtc": null,
@@ -13410,7 +13412,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 646,
+      "candlesUsed": 657,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -14029,8 +14031,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14107,8 +14109,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14184,8 +14186,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14261,8 +14263,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14338,8 +14340,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14416,8 +14418,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14493,8 +14495,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14570,8 +14572,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14647,8 +14649,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14725,8 +14727,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14802,8 +14804,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -14879,12 +14881,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-19T07:32:00.000Z",
       "entryFill": 82918,
       "resultTimeUtc": null,
@@ -14892,7 +14894,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 657,
+      "candlesUsed": 668,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -14956,8 +14958,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -15034,8 +15036,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -15111,8 +15113,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -15189,8 +15191,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-17T06:03:02.976Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 41,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 42,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -15472,7 +15474,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-17T13:09:00.000Z",
       "entryFill": 5.007,
       "resultTimeUtc": null,
@@ -15480,7 +15482,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 625,
+      "candlesUsed": 636,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -15959,7 +15961,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T15:41:00.000Z",
       "entryFill": 6.943,
       "resultTimeUtc": null,
@@ -15967,7 +15969,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 625,
+      "candlesUsed": 636,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -16724,7 +16726,7 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-17T15:01:00.000Z",
       "entryFill": 5.007,
       "resultTimeUtc": null,
@@ -16732,7 +16734,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 611,
+      "candlesUsed": 622,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -16863,7 +16865,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T15:41:00.000Z",
       "entryFill": 6.943,
       "resultTimeUtc": null,
@@ -16871,7 +16873,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 611,
+      "candlesUsed": 622,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -17971,7 +17973,7 @@
     "latestOriginalStatus": "Jauh",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T00:59:00.000Z",
       "entryFill": 8.687,
       "resultTimeUtc": null,
@@ -17979,7 +17981,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 566,
+      "candlesUsed": 577,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -19016,7 +19018,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T15:41:00.000Z",
       "entryFill": 6.943,
       "resultTimeUtc": null,
@@ -19024,7 +19026,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 566,
+      "candlesUsed": 577,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -19992,7 +19994,7 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T14:33:00.000Z",
       "entryFill": 859.3,
       "resultTimeUtc": null,
@@ -20000,7 +20002,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 544,
+      "candlesUsed": 555,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -20130,7 +20132,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T15:41:00.000Z",
       "entryFill": 6.943,
       "resultTimeUtc": null,
@@ -20138,7 +20140,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 544,
+      "candlesUsed": 555,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -20272,8 +20274,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -20350,8 +20352,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -20427,8 +20429,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -20505,8 +20507,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -20582,8 +20584,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -20659,12 +20661,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T03:53:00.000Z",
       "entryFill": 8.687,
       "resultTimeUtc": null,
@@ -20672,7 +20674,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 555,
+      "candlesUsed": 566,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -20736,12 +20738,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-19T00:00:00.000Z",
       "entryFill": 888.32,
       "resultTimeUtc": null,
@@ -20749,7 +20751,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 555,
+      "candlesUsed": 566,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -20813,12 +20815,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-19T02:48:00.000Z",
       "entryFill": 82631,
       "resultTimeUtc": null,
@@ -20826,7 +20828,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 555,
+      "candlesUsed": 566,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -20890,8 +20892,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -20967,8 +20969,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-18T04:59:05.632Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 34,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 35,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -21739,7 +21741,7 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T14:33:00.000Z",
       "entryFill": 859.3,
       "resultTimeUtc": null,
@@ -21747,7 +21749,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 527,
+      "candlesUsed": 538,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -22016,7 +22018,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T15:41:00.000Z",
       "entryFill": 6.943,
       "resultTimeUtc": null,
@@ -22024,7 +22026,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 527,
+      "candlesUsed": 538,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -22504,7 +22506,7 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T14:33:00.000Z",
       "entryFill": 859.3,
       "resultTimeUtc": null,
@@ -22512,7 +22514,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 523,
+      "candlesUsed": 534,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -22782,7 +22784,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T15:41:00.000Z",
       "entryFill": 6.943,
       "resultTimeUtc": null,
@@ -22790,7 +22792,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 523,
+      "candlesUsed": 534,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -23198,7 +23200,7 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-18T19:21:00.000Z",
       "entryFill": 6.943,
       "resultTimeUtc": null,
@@ -23206,7 +23208,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 505,
+      "candlesUsed": 516,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -26393,12 +26395,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-19T02:31:00.000Z",
       "entryFill": 5.007,
       "resultTimeUtc": null,
@@ -26406,7 +26408,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 460,
+      "candlesUsed": 471,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -26470,8 +26472,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -26547,8 +26549,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -26624,8 +26626,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -26701,8 +26703,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -26778,8 +26780,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -26855,12 +26857,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-19T02:28:00.000Z",
       "entryFill": 888.32,
       "resultTimeUtc": null,
@@ -26868,7 +26870,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 460,
+      "candlesUsed": 471,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -26932,8 +26934,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -27009,8 +27011,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -27086,8 +27088,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -27164,8 +27166,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-19T04:28:41.205Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 27,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 28,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -29045,7 +29047,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T16:47:00.000Z",
       "entryFill": 77.16,
       "resultTimeUtc": null,
@@ -29053,7 +29055,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 407,
+      "candlesUsed": 418,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -29390,7 +29392,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T16:50:00.000Z",
       "entryFill": 254.5,
       "resultTimeUtc": null,
@@ -29398,7 +29400,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 407,
+      "candlesUsed": 418,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -31199,7 +31201,7 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-20T03:59:00.000Z",
       "entryFill": 8.687,
       "resultTimeUtc": null,
@@ -31207,7 +31209,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 370,
+      "candlesUsed": 381,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -32036,21 +32038,22 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-20T08:02:00.000Z",
       "entryFill": 2385.2,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 354,
+      "resultTimeUtc": "2026-10-23T22:53:00.000Z",
+      "resultPrice": 2353.6,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 365,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -32105,7 +32108,7 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-20T08:04:00.000Z",
       "entryFill": 1.294,
       "resultTimeUtc": null,
@@ -32113,7 +32116,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 354,
+      "candlesUsed": 365,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -32244,21 +32247,22 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T15:16:00.000Z",
       "entryFill": 0.0786,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 354,
+      "resultTimeUtc": "2026-10-23T22:55:00.000Z",
+      "resultPrice": 0.0774,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 365,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -32453,21 +32457,22 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T16:49:00.000Z",
       "entryFill": 11.843,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 354,
+      "resultTimeUtc": "2026-10-23T22:53:00.000Z",
+      "resultPrice": 11.639,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 365,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -32522,21 +32527,22 @@
     "latestOriginalStatus": "Menunggu retest",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T09:12:00.000Z",
       "entryFill": 0.98,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 354,
+      "resultTimeUtc": "2026-10-23T22:47:00.000Z",
+      "resultPrice": 0.958,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 365,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -32663,8 +32669,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-20T05:53:11.247Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 22,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 23,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -32740,8 +32746,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-20T05:53:11.247Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 22,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 23,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -32818,12 +32824,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-20T05:53:11.247Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 22,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 23,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-20T13:59:00.000Z",
       "entryFill": 8.687,
       "resultTimeUtc": null,
@@ -32831,7 +32837,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 361,
+      "candlesUsed": 372,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -32895,8 +32901,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-20T05:53:11.247Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 22,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 23,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -32973,12 +32979,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-20T05:53:11.247Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 22,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 23,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-20T05:05:00.000Z",
       "entryFill": 1355.1,
       "resultTimeUtc": null,
@@ -32986,7 +32992,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 361,
+      "candlesUsed": 372,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -33050,12 +33056,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-20T05:53:11.247Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 22,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 23,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-20T05:08:00.000Z",
       "entryFill": 888.32,
       "resultTimeUtc": null,
@@ -33063,7 +33069,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 361,
+      "candlesUsed": 372,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -33127,8 +33133,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-20T05:53:11.247Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 22,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 23,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -33897,21 +33903,22 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-20T11:18:00.000Z",
       "entryFill": 2385.2,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 333,
+      "resultTimeUtc": "2026-10-23T22:53:00.000Z",
+      "resultPrice": 2355.8,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 344,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -33966,7 +33973,7 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-20T11:18:00.000Z",
       "entryFill": 1.294,
       "resultTimeUtc": null,
@@ -33974,7 +33981,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 333,
+      "candlesUsed": 344,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -34105,21 +34112,22 @@
     "latestOriginalStatus": "Aktif",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T15:16:00.000Z",
       "entryFill": 0.0786,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 333,
+      "resultTimeUtc": "2026-10-23T22:53:00.000Z",
+      "resultPrice": 0.0775,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 344,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -34177,8 +34185,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -34254,12 +34262,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-21T15:00:00.000Z",
       "entryFill": 9.841,
       "resultTimeUtc": null,
@@ -34267,7 +34275,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -34331,8 +34339,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -34408,8 +34416,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "TP",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -34486,8 +34494,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -34563,8 +34571,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -34640,8 +34648,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -34717,26 +34725,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T13:06:00.000Z",
       "entryFill": 59.01,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "resultTimeUtc": "2026-10-23T23:06:00.000Z",
+      "resultPrice": 56.426,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -34794,8 +34803,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -34871,12 +34880,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-21T05:34:00.000Z",
       "entryFill": 154.64,
       "resultTimeUtc": null,
@@ -34884,7 +34893,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -34948,12 +34957,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -34961,7 +34970,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -35025,8 +35034,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -35102,26 +35111,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-21T13:01:00.000Z",
       "entryFill": 0.08553,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "resultTimeUtc": "2026-10-23T22:55:00.000Z",
+      "resultPrice": 0.076152,
+      "rMultiple": 2,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "TP tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "TP"
     }
   },
   {
@@ -35179,8 +35189,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -35257,12 +35267,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-21T07:32:00.000Z",
       "entryFill": 83158,
       "resultTimeUtc": null,
@@ -35270,7 +35280,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -35334,12 +35344,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T16:42:00.000Z",
       "entryFill": 2385.2,
       "resultTimeUtc": null,
@@ -35347,7 +35357,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -35411,8 +35421,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -35488,8 +35498,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -35565,8 +35575,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -35643,12 +35653,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T09:12:00.000Z",
       "entryFill": 0.9804,
       "resultTimeUtc": null,
@@ -35656,7 +35666,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -35720,12 +35730,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T15:16:00.000Z",
       "entryFill": 0.07862,
       "resultTimeUtc": null,
@@ -35733,7 +35743,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -35797,8 +35807,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -35874,12 +35884,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-21T14:48:00.000Z",
       "entryFill": 276,
       "resultTimeUtc": null,
@@ -35887,7 +35897,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 264,
+      "candlesUsed": 275,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -35951,8 +35961,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36028,8 +36038,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-21T07:16:32.857Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 15,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 16,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36105,26 +36115,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T16:51:00.000Z",
       "entryFill": 4.865,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "resultTimeUtc": "2026-10-23T22:55:00.000Z",
+      "resultPrice": 4.5979,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -36182,12 +36193,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T01:07:00.000Z",
       "entryFill": 0.3306,
       "resultTimeUtc": null,
@@ -36195,7 +36206,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -36259,8 +36270,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36336,8 +36347,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36413,8 +36424,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36490,8 +36501,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36567,8 +36578,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36644,8 +36655,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36721,8 +36732,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36798,8 +36809,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36875,8 +36886,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -36952,26 +36963,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T13:06:00.000Z",
       "entryFill": 59.01,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "resultTimeUtc": "2026-10-23T23:06:00.000Z",
+      "resultPrice": 56.426,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -37029,8 +37041,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -37106,8 +37118,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -37183,26 +37195,26 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
-      "resultTimeUtc": null,
+      "resultTimeUtc": "2026-10-23T22:55:00.000Z",
       "resultPrice": null,
       "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
-      "result": "PENDING"
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
+      "result": "EXPIRED"
     }
   },
   {
@@ -37260,12 +37272,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T09:12:00.000Z",
       "entryFill": 81749,
       "resultTimeUtc": null,
@@ -37273,7 +37285,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -37337,12 +37349,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T16:42:00.000Z",
       "entryFill": 2385.2,
       "resultTimeUtc": null,
@@ -37350,7 +37362,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -37414,25 +37426,25 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
-      "entryTimeUtc": null,
-      "entryFill": null,
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": "2026-10-23T22:47:00.000Z",
+      "entryFill": 1.2936,
       "resultTimeUtc": null,
       "resultPrice": null,
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
-        "Menunggu entry tersentuh."
+        "Entry terpicu; menunggu TP/SL."
       ],
-      "reasonCode": "WAITING_ENTRY",
+      "reasonCode": "IN_TRADE",
       "result": "PENDING"
     }
   },
@@ -37491,26 +37503,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T01:07:00.000Z",
       "entryFill": 7.494,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "resultTimeUtc": "2026-10-23T22:53:00.000Z",
+      "resultPrice": 6.8241,
+      "rMultiple": 2.0002985965959983,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "TP tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "TP"
     }
   },
   {
@@ -37568,12 +37581,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T09:12:00.000Z",
       "entryFill": 0.9804,
       "resultTimeUtc": null,
@@ -37581,7 +37594,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -37645,12 +37658,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T15:16:00.000Z",
       "entryFill": 0.07862,
       "resultTimeUtc": null,
@@ -37658,7 +37671,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -37722,8 +37735,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -37799,26 +37812,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T08:36:00.000Z",
       "entryFill": 0.2153,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "resultTimeUtc": "2026-10-23T22:50:00.000Z",
+      "resultPrice": 0.20884,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -37876,12 +37890,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-22T05:17:19.428Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 10,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 11,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-22T15:14:00.000Z",
       "entryFill": 0.4283,
       "resultTimeUtc": null,
@@ -37889,7 +37903,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 183,
+      "candlesUsed": 194,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -37953,26 +37967,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-23T11:01:00.000Z",
       "entryFill": 4.865,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "resultTimeUtc": "2026-10-23T22:55:00.000Z",
+      "resultPrice": 4.5979,
+      "rMultiple": -1,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "SL tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "SL"
     }
   },
   {
@@ -38030,8 +38045,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -38107,8 +38122,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -38184,8 +38199,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -38261,8 +38276,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -38338,12 +38353,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -38351,7 +38366,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -38415,12 +38430,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -38428,7 +38443,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -38492,12 +38507,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -38505,7 +38520,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -38569,12 +38584,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-23T02:36:00.000Z",
       "entryFill": 1.322,
       "resultTimeUtc": null,
@@ -38582,7 +38597,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -38646,8 +38661,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -38723,26 +38738,27 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-23T02:36:00.000Z",
       "entryFill": 0.55262,
-      "resultTimeUtc": null,
-      "resultPrice": null,
-      "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "resultTimeUtc": "2026-10-23T22:20:00.000Z",
+      "resultPrice": 0.49736,
+      "rMultiple": 1.9992764109985521,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
-        "Entry terpicu; menunggu TP/SL."
+        "TP tersentuh setelah entry terpicu; waktu dan harga diverifikasi menggunakan data candle.",
+        "Waktu = awal candle 1m tempat level pertama kali tersentuh. Harga eksekusi teoretis = level TP/SL; tanpa fee/slippage."
       ],
-      "reasonCode": "IN_TRADE",
-      "result": "PENDING"
+      "reasonCode": null,
+      "result": "TP"
     }
   },
   {
@@ -38800,12 +38816,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-23T08:17:00.000Z",
       "entryFill": 0.08029,
       "resultTimeUtc": null,
@@ -38813,7 +38829,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -38877,12 +38893,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-23T02:36:00.000Z",
       "entryFill": 0.004589,
       "resultTimeUtc": null,
@@ -38890,7 +38906,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -38954,8 +38970,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -39031,12 +39047,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -39044,7 +39060,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -39108,12 +39124,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -39121,7 +39137,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -39185,8 +39201,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -39262,8 +39278,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "SL",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -39340,12 +39356,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -39353,7 +39369,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -39417,12 +39433,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -39430,7 +39446,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -39494,8 +39510,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -39571,8 +39587,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -39648,12 +39664,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -39661,7 +39677,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -39725,12 +39741,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -39738,7 +39754,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -39802,26 +39818,26 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
-      "resultTimeUtc": null,
+      "resultTimeUtc": "2026-10-23T22:55:00.000Z",
       "resultPrice": null,
       "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
-      "result": "PENDING"
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
+      "result": "EXPIRED"
     }
   },
   {
@@ -39879,12 +39895,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -39892,7 +39908,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -39956,12 +39972,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -39969,7 +39985,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -40033,26 +40049,26 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
-      "resultTimeUtc": null,
+      "resultTimeUtc": "2026-10-23T22:53:00.000Z",
       "resultPrice": null,
       "rMultiple": null,
-      "resultTimeSource": null,
-      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "resultTimeSource": "candle",
+      "interval": "1m",
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
-        "Menunggu entry tersentuh."
+        "EXPIRED: TP_REACHED_BEFORE_ENTRY"
       ],
-      "reasonCode": "WAITING_ENTRY",
-      "result": "PENDING"
+      "reasonCode": "TP_REACHED_BEFORE_ENTRY",
+      "result": "EXPIRED"
     }
   },
   {
@@ -40110,12 +40126,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-23T02:36:00.000Z",
       "entryFill": 733.64,
       "resultTimeUtc": null,
@@ -40123,7 +40139,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -40187,12 +40203,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": null,
       "entryFill": null,
       "resultTimeUtc": null,
@@ -40200,7 +40216,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Menunggu entry tersentuh."
@@ -40264,12 +40280,12 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
-      "evaluatedAtUtc": "2026-10-23T21:09:52.863Z",
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
       "entryTimeUtc": "2026-10-23T02:55:00.000Z",
       "entryFill": 12.267,
       "resultTimeUtc": null,
@@ -40277,7 +40293,7 @@
       "rMultiple": null,
       "resultTimeSource": null,
       "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
-      "candlesUsed": 82,
+      "candlesUsed": 93,
       "gaps": 0,
       "notes": [
         "Entry terpicu; menunggu TP/SL."
@@ -40341,8 +40357,8 @@
       "timeframe"
     ],
     "firstSeenUtc": "2026-10-23T07:12:43.425Z",
-    "lastSeenUtc": "2026-10-23T21:09:48.150Z",
-    "seenCount": 4,
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 5,
     "latestOriginalStatus": "menunggu",
     "engineCancelledAtUtc": null,
     "evaluation": {
@@ -40361,6 +40377,2145 @@
       ],
       "reasonCode": "TP_REACHED_BEFORE_ENTRY",
       "result": "EXPIRED"
+    }
+  },
+  {
+    "setupId": "crypto-e2c5c2996e52",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "SNDKB",
+    "symbol": "SNDKBUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 1234.7,
+    "entryRange": null,
+    "takeProfit": [
+      1478.4
+    ],
+    "stopLoss": 1199.5,
+    "riskReward": 6.92,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 0.284,
+    "timeframe": "4H",
+    "entryReason": "Double Deviation: sweep ke-2 lebih dangkal, tekanan jual melemah",
+    "originalStatus": "Aktif",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.9%",
+      "slDistancePct": 2.9,
+      "rrToFinalTarget": 14.4,
+      "price": 12404,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 351,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Aktif"
+      ],
+      "rawText": "SNDKBLong4H, scalpingAktif Entry limit1234.7SL 2.9%1199.5TP11478.4Rasio ke target akhir14.4R Double Deviation: sweep ke-2 lebih dangkal, tekanan jual melemah. Harga 1240.4, jarak ke entry 0.5%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTCRisiko $10: qty 0.284 SNDKB, nilai posisi $351"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Aktif",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-ea1e64886687",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "BTC",
+    "symbol": "BTCUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 83158,
+    "entryRange": null,
+    "takeProfit": [
+      79800
+    ],
+    "stopLoss": 85103.4,
+    "riskReward": 1.73,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 0.00514,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 2.3%",
+      "slDistancePct": 2.3,
+      "rrToFinalTarget": 1.7,
+      "price": 811880,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 427,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "BTCShort4H, scalpingMenunggu retest Entry limit83158.0SL 2.3%85103.4TP279800.0Rasio ke target akhir1.7R Sweep Monday High, lalu kembali masuk. Harga 81188.0, jarak ke entry 2.4%.Konfirmasi: Di sisi benar level, belum retest Risiko $10: qty 0.00514 BTC, nilai posisi $427"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-c855da89885d",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "SOL",
+    "symbol": "SOLUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 106.2,
+    "entryRange": null,
+    "takeProfit": [
+      100.4
+    ],
+    "stopLoss": 109.6,
+    "riskReward": 1.71,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 2.96,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 3.2%",
+      "slDistancePct": 3.2,
+      "rrToFinalTarget": 1.7,
+      "price": 1029,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 314,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "SOLShort4H, scalpingMenunggu retest Entry limit106.2SL 3.2%109.6TP2100.4Rasio ke target akhir1.7R Sweep Monday High, lalu kembali masuk. Harga 102.9, jarak ke entry 3.2%.Konfirmasi: Di sisi benar level, belum retest Risiko $10: qty 2.96 SOL, nilai posisi $314"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-8f4ec00a87f6",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "MUB",
+    "symbol": "MUBUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 845.8,
+    "entryRange": null,
+    "takeProfit": [
+      955.8
+    ],
+    "stopLoss": 827.9,
+    "riskReward": 6.15,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 0.561,
+    "timeframe": "4H",
+    "entryReason": "Double Deviation: sweep ke-2 lebih dangkal, tekanan jual melemah",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.1%",
+      "slDistancePct": 2.1,
+      "rrToFinalTarget": 14,
+      "price": 8796,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 475,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "MUBLong4H, scalpingMenunggu retest Entry limit845.8SL 2.1%827.9TP1955.8Rasio ke target akhir14.0R Double Deviation: sweep ke-2 lebih dangkal, tekanan jual melemah. Harga 879.6, jarak ke entry 3.8%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTC. Volume 24 jam rendah, risiko slipRisiko $10: qty 0.561 MUB, nilai posisi $475"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-a478ae784811",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "HYPE",
+    "symbol": "HYPEUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 80.43,
+    "entryRange": null,
+    "takeProfit": [
+      76.15
+    ],
+    "stopLoss": 82.911,
+    "riskReward": 1.73,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 4.03,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 3.1%",
+      "slDistancePct": 3.1,
+      "rrToFinalTarget": 1.7,
+      "price": 77110,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 324,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "HYPEShort4H, scalpingMenunggu retest Entry limit80.430SL 3.1%82.911TP276.150Rasio ke target akhir1.7R Sweep Monday High, lalu kembali masuk. Harga 77.110, jarak ke entry 4.3%.Konfirmasi: Di sisi benar level, belum retest Risiko $10: qty 4.03 HYPE, nilai posisi $324"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-41d17c232f36",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "LTC",
+    "symbol": "LTCUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 60.46,
+    "entryRange": null,
+    "takeProfit": [
+      56.71
+    ],
+    "stopLoss": 62.635,
+    "riskReward": 1.72,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 4.6,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 3.6%",
+      "slDistancePct": 3.6,
+      "rrToFinalTarget": 1.7,
+      "price": 57260,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 278,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "LTCShort4H, scalpingMenunggu retest Entry limit60.460SL 3.6%62.635TP256.710Rasio ke target akhir1.7R Sweep Monday High, lalu kembali masuk. Harga 57.260, jarak ke entry 5.6%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 4.60 LTC, nilai posisi $278"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-0318be8e4b18",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "SUI",
+    "symbol": "SUIUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 1.018,
+    "entryRange": null,
+    "takeProfit": [
+      0.937
+    ],
+    "stopLoss": 1.062,
+    "riskReward": 1.84,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 227,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 4.3%",
+      "slDistancePct": 4.3,
+      "rrToFinalTarget": 1.8,
+      "price": 961,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 231,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "SUIShort4H, scalpingMenunggu retest Entry limit1.018SL 4.3%1.062TP20.937Rasio ke target akhir1.8R Sweep Monday High, lalu kembali masuk. Harga 0.961, jarak ke entry 5.9%.Konfirmasi: Di sisi benar level, belum retest Risiko $10: qty 227 SUI, nilai posisi $231"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-cf858700de4a",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "AAVE",
+    "symbol": "AAVEUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 154.6,
+    "entryRange": null,
+    "takeProfit": [
+      144.3
+    ],
+    "stopLoss": 161.4,
+    "riskReward": 1.51,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 1.47,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 4.4%",
+      "slDistancePct": 4.4,
+      "rrToFinalTarget": 1.5,
+      "price": 1444,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 228,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "AAVEShort4H, scalpingJauh Entry limit154.6SL 4.4%161.4TP2144.3Rasio ke target akhir1.5R Sweep Monday High, lalu kembali masuk. Harga 144.4, jarak ke entry 7.1%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 1.47 AAVE, nilai posisi $228"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-37a2ae3c12a3",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "UNI",
+    "symbol": "UNIUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 7.494,
+    "entryRange": null,
+    "takeProfit": [
+      6.742
+    ],
+    "stopLoss": 7.842,
+    "riskReward": 2.16,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 28.8,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 4.6%",
+      "slDistancePct": 4.6,
+      "rrToFinalTarget": 2.2,
+      "price": 6965,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 216,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "UNIShort4H, scalpingJauh Entry limit7.494SL 4.6%7.842TP26.742Rasio ke target akhir2.2R Sweep Monday High, lalu kembali masuk. Harga 6.965, jarak ke entry 7.6%.Konfirmasi: Di sisi benar level, belum retest Risiko $10: qty 28.8 UNI, nilai posisi $216"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-d7cef9fa337d",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "TAO",
+    "symbol": "TAOUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 276,
+    "entryRange": null,
+    "takeProfit": [
+      252.9
+    ],
+    "stopLoss": 282.9,
+    "riskReward": 3.35,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 1.45,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 2.5%",
+      "slDistancePct": 2.5,
+      "rrToFinalTarget": 3.3,
+      "price": 2553,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 399,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "TAOShort4H, scalpingJauh Entry limit276.0SL 2.5%282.9TP2252.9Rasio ke target akhir3.3R Sweep Monday High, lalu kembali masuk. Harga 255.3, jarak ke entry 8.1%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 1.45 TAO, nilai posisi $399"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-cebafbdfdc1d",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "AVAX",
+    "symbol": "AVAXUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 9.841,
+    "entryRange": null,
+    "takeProfit": [
+      9.055
+    ],
+    "stopLoss": 10.104,
+    "riskReward": 2.99,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 38,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 2.7%",
+      "slDistancePct": 2.7,
+      "rrToFinalTarget": 3,
+      "price": 9059,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 374,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "AVAXShort4H, scalpingJauh Entry limit9.841SL 2.7%10.104TP29.055Rasio ke target akhir3.0R Sweep Monday High, lalu kembali masuk. Harga 9.059, jarak ke entry 8.6%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 38.0 AVAX, nilai posisi $374"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-5ca303a4b5ad",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "HBAR",
+    "symbol": "HBARUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 0.0855,
+    "entryRange": null,
+    "takeProfit": [
+      0.0788
+    ],
+    "stopLoss": 0.0869,
+    "riskReward": 4.79,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 7517,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 1.6%",
+      "slDistancePct": 1.6,
+      "rrToFinalTarget": 5.1,
+      "price": 775,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 643,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "HBARShort4H, scalpingJauh Entry limit0.0855SL 1.6%0.0869TP20.0788Rasio ke target akhir5.1R Sweep Monday High, lalu kembali masuk. Harga 0.0775, jarak ke entry 10.4%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 7517 HBAR, nilai posisi $643"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-3177fd51384f",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "BMT",
+    "symbol": "BMTUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 0.0296,
+    "entryRange": null,
+    "takeProfit": [
+      0.0226
+    ],
+    "stopLoss": 0.032,
+    "riskReward": 2.92,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 4050,
+    "timeframe": "4H",
+    "entryReason": "Sweep di atas range, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 8.4%",
+      "slDistancePct": 8.4,
+      "rrToFinalTarget": 5.6,
+      "price": 225,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "swing",
+      "positionValueUsd": 120,
+      "chips": [
+        "Short",
+        "4H, swing",
+        "Jauh"
+      ],
+      "rawText": "BMTShort4H, swingJauh Entry limit0.0296SL 8.4%0.0320TP10.0226Rasio ke target akhir5.6R Sweep di atas range, lalu kembali masuk. Harga 0.0225, jarak ke entry 31.7%.Konfirmasi: Retest tertahan di 4H Volume 24 jam rendah, risiko slipRisiko $10: qty 4050 BMT, nilai posisi $120"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-4f1985554ad9",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "TQQQB",
+    "symbol": "TQQQBUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 65.72,
+    "entryRange": null,
+    "takeProfit": [
+      75.535
+    ],
+    "stopLoss": 64.406,
+    "riskReward": 7.47,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 7.61,
+    "timeframe": "4H",
+    "entryReason": "Three Tap: 2 sentuhan, lalu sweep dan reclaim",
+    "originalStatus": "Aktif",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.0%",
+      "slDistancePct": 2,
+      "rrToFinalTarget": 14.9,
+      "price": 66500,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 500,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Aktif"
+      ],
+      "rawText": "TQQQBLong4H, scalpingAktif Entry limit65.720SL 2.0%64.406TP175.535Rasio ke target akhir14.9R Three Tap: 2 sentuhan, lalu sweep dan reclaim. Harga 66.500, jarak ke entry 1.2%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTC. Volume 24 jam rendah, risiko slipRisiko $10: qty 7.61 TQQQB, nilai posisi $500"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Aktif",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-dcc80d2c9c81",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "CRCLB",
+    "symbol": "CRCLBUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 81.36,
+    "entryRange": null,
+    "takeProfit": [
+      83.565
+    ],
+    "stopLoss": 79.389,
+    "riskReward": 1.12,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 5.07,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.4%",
+      "slDistancePct": 2.4,
+      "rrToFinalTarget": 5.5,
+      "price": 85680,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 413,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "CRCLBLong4H, scalpingMenunggu retest Entry limit81.360SL 2.4%79.389TP183.565Rasio ke target akhir5.5R Sweep Monday Low, lalu reclaim. Harga 85.680, jarak ke entry 5.0%.Konfirmasi: Di sisi benar level, belum retest Melawan struktur turun BTCRisiko $10: qty 5.07 CRCLB, nilai posisi $413"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-0424f12af100",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "ADA",
+    "symbol": "ADAUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 0.223,
+    "entryRange": null,
+    "takeProfit": [
+      0.21
+    ],
+    "stopLoss": 0.232,
+    "riskReward": 1.44,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 1148,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 3.9%",
+      "slDistancePct": 3.9,
+      "rrToFinalTarget": 1.5,
+      "price": 211,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 256,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "ADAShort4H, scalpingMenunggu retest Entry limit0.223SL 3.9%0.232TP20.210Rasio ke target akhir1.5R Sweep Monday High, lalu kembali masuk. Harga 0.211, jarak ke entry 5.7%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 1148 ADA, nilai posisi $256"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-cc61bf7fea8c",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "DOT",
+    "symbol": "DOTUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 1.182,
+    "entryRange": null,
+    "takeProfit": [
+      1.152
+    ],
+    "stopLoss": 1.212,
+    "riskReward": 1,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 334,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.5%",
+      "slDistancePct": 2.5,
+      "rrToFinalTarget": 5.8,
+      "price": 1085,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 394,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "DOTShort4H, scalpingJauh Entry limit1.182SL 2.5%1.212TP11.152Rasio ke target akhir5.8R Sweep Monday High, lalu kembali masuk. Harga 1.085, jarak ke entry 8.9%.Konfirmasi: Retest tertahan di 4H Volume 24 jam rendah, risiko slipRisiko $10: qty 334 DOT, nilai posisi $394"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-3ce1d4f417c6",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "NEAR",
+    "symbol": "NEARUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 5.141,
+    "entryRange": null,
+    "takeProfit": [
+      4.301
+    ],
+    "stopLoss": 5.493,
+    "riskReward": 2.39,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 28.4,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 6.8%",
+      "slDistancePct": 6.8,
+      "rrToFinalTarget": 2.4,
+      "price": 4689,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "swing",
+      "positionValueUsd": 146,
+      "chips": [
+        "Short",
+        "4H, swing",
+        "Jauh"
+      ],
+      "rawText": "NEARShort4H, swingJauh Entry limit5.141SL 6.8%5.493TP24.301Rasio ke target akhir2.4R Sweep Monday High, lalu kembali masuk. Harga 4.689, jarak ke entry 9.6%.Konfirmasi: Di sisi benar level, belum retest Risiko $10: qty 28.4 NEAR, nilai posisi $146"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-1c107d3ba41f",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "INJ",
+    "symbol": "INJUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 8.745,
+    "entryRange": null,
+    "takeProfit": [
+      7.917
+    ],
+    "stopLoss": 9.484,
+    "riskReward": 1.12,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 13.5,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 8.5%",
+      "slDistancePct": 8.5,
+      "rrToFinalTarget": 3.1,
+      "price": 7753,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "swing",
+      "positionValueUsd": 118,
+      "chips": [
+        "Short",
+        "4H, swing",
+        "Jauh"
+      ],
+      "rawText": "INJShort4H, swingJauh Entry limit8.745SL 8.5%9.484TP17.917Rasio ke target akhir3.1R Sweep Monday High, lalu kembali masuk. Harga 7.753, jarak ke entry 12.8%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 13.5 INJ, nilai posisi $118"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-6da8fcba90bc",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "QNT",
+    "symbol": "QNTUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 204.7,
+    "entryRange": null,
+    "takeProfit": [
+      181.7
+    ],
+    "stopLoss": 214.6,
+    "riskReward": 2.32,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 1.01,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 4.8%",
+      "slDistancePct": 4.8,
+      "rrToFinalTarget": 2.3,
+      "price": 1813,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 207,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "QNTShort4H, scalpingJauh Entry limit204.7SL 4.8%214.6TP2181.7Rasio ke target akhir2.3R Sweep Monday High, lalu kembali masuk. Harga 181.3, jarak ke entry 12.9%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 1.01 QNT, nilai posisi $207"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-7dfbbca62771",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "ARB",
+    "symbol": "ARBUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 0.203,
+    "entryRange": null,
+    "takeProfit": [
+      0.187
+    ],
+    "stopLoss": 0.208,
+    "riskReward": 3.2,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 2035,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.4%",
+      "slDistancePct": 2.4,
+      "rrToFinalTarget": 8.3,
+      "price": 172,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 412,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "ARBShort4H, scalpingJauh Entry limit0.203SL 2.4%0.208TP10.187Rasio ke target akhir8.3R Sweep Monday High, lalu kembali masuk. Harga 0.172, jarak ke entry 18.1%.Konfirmasi: Di sisi benar level, belum retest Volume 24 jam rendah, risiko slipRisiko $10: qty 2035 ARB, nilai posisi $412"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-26b0012fa247",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "SOXLB",
+    "symbol": "SOXLBUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 105,
+    "entryRange": null,
+    "takeProfit": [
+      80.37
+    ],
+    "stopLoss": 109.1,
+    "riskReward": 6.01,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 2.45,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday High, lalu kembali masuk",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP2",
+      "slLabel": "SL 3.9%",
+      "slDistancePct": 3.9,
+      "rrToFinalTarget": 6,
+      "price": 83240,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 258,
+      "chips": [
+        "Short",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "SOXLBShort4H, scalpingJauh Entry limit105.0SL 3.9%109.1TP280.370Rasio ke target akhir6.0R Sweep Monday High, lalu kembali masuk. Harga 83.240, jarak ke entry 26.2%.Konfirmasi: Di sisi benar level, belum retest Risiko $10: qty 2.45 SOXLB, nilai posisi $258"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-7ae31fb7e848",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "WLD",
+    "symbol": "WLDUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 0.483,
+    "entryRange": null,
+    "takeProfit": [
+      0.538
+    ],
+    "stopLoss": 0.464,
+    "riskReward": 2.89,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 546,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 3.8%",
+      "slDistancePct": 3.8,
+      "rrToFinalTarget": 7.4,
+      "price": 483,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 263,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "WLDLong4H, scalpingMenunggu retest Entry limit0.483SL 3.8%0.464TP10.538Rasio ke target akhir7.4R Sweep Monday Low, lalu reclaim. Harga 0.483, jarak ke entry 0.0%.Konfirmasi: Di sisi benar level, belum retest Melawan struktur turun BTCRisiko $10: qty 546 WLD, nilai posisi $263"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-e239795dfc50",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "DOGE",
+    "symbol": "DOGEUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 0.0786,
+    "entryRange": null,
+    "takeProfit": [
+      0.0868
+    ],
+    "stopLoss": 0.077,
+    "riskReward": 5.12,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 6368,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Aktif",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.0%",
+      "slDistancePct": 2,
+      "rrToFinalTarget": 12.1,
+      "price": 787,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 501,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Aktif"
+      ],
+      "rawText": "DOGELong4H, scalpingAktif Entry limit0.0786SL 2.0%0.0770TP10.0868Rasio ke target akhir12.1R Sweep Monday Low, lalu reclaim. Harga 0.0787, jarak ke entry 0.1%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTCRisiko $10: qty 6368 DOGE, nilai posisi $501"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Aktif",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-0f5b89a5ee81",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "ETH",
+    "symbol": "ETHUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 2385.2,
+    "entryRange": null,
+    "takeProfit": [
+      2528.8
+    ],
+    "stopLoss": 2343.1,
+    "riskReward": 3.41,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 0.238,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Aktif",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 1.8%",
+      "slDistancePct": 1.8,
+      "rrToFinalTarget": 8.4,
+      "price": 23869,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 567,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Aktif"
+      ],
+      "rawText": "ETHLong4H, scalpingAktif Entry limit2385.2SL 1.8%2343.1TP12528.8Rasio ke target akhir8.4R Sweep Monday Low, lalu reclaim. Harga 2386.9, jarak ke entry 0.1%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTCRisiko $10: qty 0.238 ETH, nilai posisi $567"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Aktif",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-52470c9d22d5",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "XRP",
+    "symbol": "XRPUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 1.294,
+    "entryRange": null,
+    "takeProfit": [
+      1.394
+    ],
+    "stopLoss": 1.276,
+    "riskReward": 5.56,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 579,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Aktif",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 1.3%",
+      "slDistancePct": 1.3,
+      "rrToFinalTarget": 13.8,
+      "price": 1296,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 749,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Aktif"
+      ],
+      "rawText": "XRPLong4H, scalpingAktif Entry limit1.294SL 1.3%1.276TP11.394Rasio ke target akhir13.8R Sweep Monday Low, lalu reclaim. Harga 1.296, jarak ke entry 0.2%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTCRisiko $10: qty 579 XRP, nilai posisi $749"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Aktif",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-b466a714c6de",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "SPCXB",
+    "symbol": "SPCXBUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 145.3,
+    "entryRange": null,
+    "takeProfit": [
+      158.4
+    ],
+    "stopLoss": 142.2,
+    "riskReward": 4.23,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 3.16,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.2%",
+      "slDistancePct": 2.2,
+      "rrToFinalTarget": 9.9,
+      "price": 1478,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 460,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "SPCXBLong4H, scalpingMenunggu retest Entry limit145.3SL 2.2%142.2TP1158.4Rasio ke target akhir9.9R Sweep Monday Low, lalu reclaim. Harga 147.8, jarak ke entry 1.7%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTCRisiko $10: qty 3.16 SPCXB, nilai posisi $460"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-db622dda7f8e",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "BCH",
+    "symbol": "BCHUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 274.3,
+    "entryRange": null,
+    "takeProfit": [
+      289.4
+    ],
+    "stopLoss": 269.8,
+    "riskReward": 3.36,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 2.22,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 1.6%",
+      "slDistancePct": 1.6,
+      "rrToFinalTarget": 10.7,
+      "price": 2826,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 609,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Menunggu retest"
+      ],
+      "rawText": "BCHLong4H, scalpingMenunggu retest Entry limit274.3SL 1.6%269.8TP1289.4Rasio ke target akhir10.7R Sweep Monday Low, lalu reclaim. Harga 282.6, jarak ke entry 2.9%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTC. Volume 24 jam rendah, risiko slipRisiko $10: qty 2.22 BCH, nilai posisi $609"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-6ab332b45a26",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "PEPE",
+    "symbol": "PEPEUSDT",
+    "direction": "SHORT",
+    "entryType": "limit",
+    "entryPrice": 0.00000479,
+    "entryRange": null,
+    "takeProfit": [
+      0.00000421
+    ],
+    "stopLoss": 0.00000515,
+    "riskReward": 1.61,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 27397260,
+    "timeframe": "4H",
+    "entryReason": "Sweep di atas range, lalu kembali masuk",
+    "originalStatus": "Menunggu retest",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 7.6%",
+      "slDistancePct": 7.6,
+      "rrToFinalTarget": 3.2,
+      "price": 457,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "swing",
+      "positionValueUsd": 131,
+      "chips": [
+        "Short",
+        "4H, swing",
+        "Menunggu retest"
+      ],
+      "rawText": "PEPEShort4H, swingMenunggu retest Entry limit0.00000479SL 7.6%0.00000515TP10.00000421Rasio ke target akhir3.2R Sweep di atas range, lalu kembali masuk. Harga 0.00000457, jarak ke entry 4.8%.Konfirmasi: Retest tertahan di 4H Risiko $10: qty 27397260 PEPE, nilai posisi $131"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Menunggu retest",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-5827401e32f1",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "MSTRB",
+    "symbol": "MSTRBUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 135.8,
+    "entryRange": null,
+    "takeProfit": [
+      151.1
+    ],
+    "stopLoss": 132.2,
+    "riskReward": 4.25,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 2.79,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 2.6%",
+      "slDistancePct": 2.6,
+      "rrToFinalTarget": 9.2,
+      "price": 1465,
+      "confirmation": "Di sisi benar level, belum retest",
+      "style": "scalping",
+      "positionValueUsd": 379,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "MSTRBLong4H, scalpingJauh Entry limit135.8SL 2.6%132.2TP1151.1Rasio ke target akhir9.2R Sweep Monday Low, lalu reclaim. Harga 146.5, jarak ke entry 7.3%.Konfirmasi: Di sisi benar level, belum retest Melawan struktur turun BTC. Volume 24 jam rendah, risiko slipRisiko $10: qty 2.79 MSTRB, nilai posisi $379"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
+    }
+  },
+  {
+    "setupId": "crypto-0a7da5e47499",
+    "engine": "crypto",
+    "analysisTimeUtc": "2026-10-23T23:56:00.323Z",
+    "analysisTimeWib": "2026-10-24 06:56",
+    "analysisTimeSource": "first_seen",
+    "ticker": "ERA",
+    "symbol": "ERAUSDT",
+    "direction": "LONG",
+    "entryType": "limit",
+    "entryPrice": 0.065,
+    "entryRange": null,
+    "takeProfit": [
+      0.0851
+    ],
+    "stopLoss": 0.0618,
+    "riskReward": 6.28,
+    "riskPercent": null,
+    "riskAmountUsd": 10,
+    "quantity": 3170,
+    "timeframe": "4H",
+    "entryReason": "Sweep Monday Low, lalu reclaim",
+    "originalStatus": "Jauh",
+    "sourceResult": null,
+    "sourceR": null,
+    "sourceUrl": "https://triasnugra.github.io/crypto/",
+    "rawData": {
+      "tpLabel": "TP1",
+      "slLabel": "SL 4.9%",
+      "slDistancePct": 4.9,
+      "rrToFinalTarget": 15.4,
+      "price": 763,
+      "confirmation": "Retest tertahan di 4H",
+      "style": "scalping",
+      "positionValueUsd": 206,
+      "chips": [
+        "Long",
+        "4H, scalping",
+        "Jauh"
+      ],
+      "rawText": "ERALong4H, scalpingJauh Entry limit0.0650SL 4.9%0.0618TP10.0851Rasio ke target akhir15.4R Sweep Monday Low, lalu reclaim. Harga 0.0763, jarak ke entry 14.8%.Konfirmasi: Retest tertahan di 4H Melawan struktur turun BTC. Volume 24 jam rendah, risiko slipRisiko $10: qty 3170 ERA, nilai posisi $206"
+    },
+    "warnings": [],
+    "missingFields": [
+      "riskPercent"
+    ],
+    "firstSeenUtc": "2026-10-23T23:56:00.323Z",
+    "lastSeenUtc": "2026-10-23T23:56:00.323Z",
+    "seenCount": 1,
+    "latestOriginalStatus": "Jauh",
+    "engineCancelledAtUtc": null,
+    "evaluation": {
+      "evaluatedAtUtc": "2026-10-23T23:56:11.159Z",
+      "entryTimeUtc": null,
+      "entryFill": null,
+      "resultTimeUtc": null,
+      "resultPrice": null,
+      "rMultiple": null,
+      "resultTimeSource": null,
+      "interval": "1m (sampai batas 15m) + 15m, dipertajam ke 1m saat ada kejadian",
+      "candlesUsed": 0,
+      "gaps": 0,
+      "notes": [
+        "Belum ada candle tertutup setelah waktu analisis."
+      ],
+      "reasonCode": "NO_CLOSED_CANDLES_YET",
+      "result": "PENDING"
     }
   }
 ]
