@@ -48,3 +48,10 @@ test('record lama tanpa timeframe diisi saat terlihat lagi', () => {
   assert.equal(setups[0].timeframe, TN_TIMEFRAME);
   assert.deepEqual(setups[0].missingFields, []);
 });
+
+test('agregasi: Mesin 2 dikelompokkan sebagai 1D walau timeframe tersimpan null', async () => {
+  const { buildDashboard } = await import('../src/aggregate.js');
+  const s = { ...rec(entry()), timeframe: null, evaluation: { result: 'TP', evaluatedAtUtc: '2026-10-22T00:00:00Z', resultTimeUtc: '2026-10-22T00:00:00Z', resultTimeSource: 'candle', notes: [] } };
+  const d = buildDashboard({ setups: [s], diagnostics: { runs: [] }, cfg: { minSamplePerEngine: 30, bootstrapIterations: 50, pairWindowMinutes: 120, cluster: { windowHours: 24, entryTolerance: 0.01 } }, nowIso: '2026-10-27T00:00:00Z' });
+  assert.deepEqual(Object.keys(d.engines.independent.tn.byTimeframe), [TN_TIMEFRAME]);
+});
