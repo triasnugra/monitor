@@ -49,6 +49,19 @@ export function upsertSetups(existing, incoming, nowIso, cancelPatterns = []) {
       added++;
     } else {
       cur.lastSeenUtc = nowIso; cur.seenCount += 1; cur.latestOriginalStatus = s.originalStatus;
+      // Hasil versi SUMBER diperbarui tiap scan (Mesin 2 mengubah "menunggu" -> TP/SL/kedaluwarsa).
+      // Nilai saat pertama terlihat disimpan di firstSourceResult supaya tidak hilang.
+      if (cur.firstSourceResult === undefined) cur.firstSourceResult = cur.sourceResult ?? null;
+      if (s.sourceResult != null || s.sourceR != null) {
+        cur.sourceResult = s.sourceResult ?? null;
+        cur.sourceR = s.sourceR ?? null;
+        cur.rawData = s.rawData ?? cur.rawData;
+      }
+      // Isi timeframe yang dulu kosong (mis. Mesin 2 sebelum parser memberinya nilai).
+      if (cur.timeframe == null && s.timeframe != null) {
+        cur.timeframe = s.timeframe;
+        cur.missingFields = (cur.missingFields ?? []).filter((k) => k !== 'timeframe');
+      }
       if (!cur.engineCancelledAtUtc && re && s.originalStatus && re.test(s.originalStatus)) cur.engineCancelledAtUtc = nowIso;
       updated++;
     }
