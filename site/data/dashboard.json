@@ -1,6 +1,6 @@
 {
-  "generatedAtUtc": "2026-10-27T05:26:21.301Z",
-  "generatedAtWib": "2026-10-27 12:26",
+  "generatedAtUtc": "2026-10-27T05:30:31.870Z",
+  "generatedAtWib": "2026-10-27 12:30",
   "counts": {
     "setups": 928
   },
@@ -63517,112 +63517,12 @@
   },
   "diagnostics": {
     "lastRun": {
-      "runAtUtc": "2026-10-27T05:26:21.299Z",
+      "runAtUtc": "2026-10-27T05:30:31.868Z",
       "engines": {},
       "evaluation": null,
       "fatal": null
     },
     "runs": [
-      {
-        "runAtUtc": "2026-10-17T17:28:21.573Z",
-        "engines": {
-          "crypto": {
-            "status": "OK",
-            "cards": 12,
-            "parsed": 12,
-            "added": 4,
-            "errors": [],
-            "warnings": [],
-            "emptyKind": null,
-            "httpStatus": 200,
-            "durationMs": 8818,
-            "forward": null,
-            "trackingStarted": false
-          },
-          "tn": {
-            "status": "OK",
-            "cards": 97,
-            "parsed": 97,
-            "added": 0,
-            "errors": [],
-            "warnings": [],
-            "emptyKind": null,
-            "httpStatus": 200,
-            "durationMs": 340,
-            "forward": {
-              "ready": false,
-              "locked": true,
-              "counts": {
-                "tercatat_sesuai_protokol": 53,
-                "selesai": 24,
-                "menunggu": 29,
-                "terisi": 24,
-                "minggu_berbeda": 0,
-                "diabaikan_mesin_lain": 0,
-                "dilewati_dedupe": 29
-              },
-              "dibuat": "2026-10-17T16:55:38.619Z"
-            },
-            "trackingStarted": false
-          }
-        },
-        "evaluation": {
-          "checked": 110,
-          "changed": 8,
-          "errors": []
-        },
-        "fatal": null
-      },
-      {
-        "runAtUtc": "2026-10-17T19:40:00.351Z",
-        "engines": {
-          "crypto": {
-            "status": "OK",
-            "cards": 14,
-            "parsed": 14,
-            "added": 2,
-            "errors": [],
-            "warnings": [],
-            "emptyKind": null,
-            "httpStatus": 200,
-            "durationMs": 11443,
-            "forward": null,
-            "trackingStarted": false
-          },
-          "tn": {
-            "status": "OK",
-            "cards": 97,
-            "parsed": 97,
-            "added": 0,
-            "errors": [],
-            "warnings": [],
-            "emptyKind": null,
-            "httpStatus": 200,
-            "durationMs": 158,
-            "forward": {
-              "ready": false,
-              "locked": true,
-              "counts": {
-                "tercatat_sesuai_protokol": 53,
-                "selesai": 24,
-                "menunggu": 29,
-                "terisi": 24,
-                "minggu_berbeda": 0,
-                "diabaikan_mesin_lain": 0,
-                "dilewati_dedupe": 29
-              },
-              "dibuat": "2026-10-17T16:55:38.619Z"
-            },
-            "trackingStarted": false
-          }
-        },
-        "evaluation": {
-          "checked": 104,
-          "changed": 1,
-          "errors": []
-        },
-        "fatal": null
-      },
       {
         "runAtUtc": "2026-10-17T22:01:56.312Z",
         "engines": {
@@ -65851,6 +65751,22 @@
       },
       {
         "runAtUtc": "2026-10-27T05:26:21.299Z",
+        "engines": {},
+        "evaluation": null,
+        "fatal": null
+      },
+      {
+        "runAtUtc": "2026-10-27T05:29:23.903Z",
+        "engines": {},
+        "evaluation": {
+          "checked": 183,
+          "changed": 0,
+          "errors": []
+        },
+        "fatal": null
+      },
+      {
+        "runAtUtc": "2026-10-27T05:30:31.868Z",
         "engines": {},
         "evaluation": null,
         "fatal": null
