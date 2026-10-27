@@ -1,10 +1,11 @@
+import { TN_TIMEFRAME } from './parsers/tn.js';
 import { toWib } from './util/time.js';
 import { summarize, groupBy, periodStats, markClusters, compareEngines, pairSetups } from './statistics/stats.js';
 
 const view = (s, cl) => ({
   id: s.setupId, engine: s.engine, analysisWib: s.analysisTimeWib, analysisUtc: s.analysisTimeUtc, ticker: s.ticker,
   direction: s.direction, entryType: s.entryType, entry: s.entryPrice, entryRange: s.entryRange, tp: s.takeProfit,
-  sl: s.stopLoss, rr: s.riskReward, riskPct: s.riskPercent, reason: s.entryReason, timeframe: s.timeframe,
+  sl: s.stopLoss, rr: s.riskReward, riskPct: s.riskPercent, reason: s.entryReason, timeframe: s.timeframe ?? (s.engine === 'tn' ? TN_TIMEFRAME : null),
   originalStatus: s.originalStatus, latestOriginalStatus: s.latestOriginalStatus,
   result: s.evaluation?.result ?? 'PENDING', resultWib: toWib(s.evaluation?.resultTimeUtc), resultTimeSource: s.evaluation?.resultTimeSource ?? null,
   entryWib: toWib(s.evaluation?.entryTimeUtc), r: s.evaluation?.rMultiple ?? null, notes: s.evaluation?.notes ?? [],
@@ -25,7 +26,7 @@ export function buildDashboard({ setups, diagnostics, cfg, nowIso }) {
     for (const e of ['crypto', 'tn']) {
       const l = by(e, po);
       engines[scope][e] = { summary: summarize(l), byTicker: groupBy(l, (s) => s.ticker), byDirection: groupBy(l, (s) => s.direction),
-        byTimeframe: groupBy(l, (s) => s.timeframe), byReason: groupBy(l, (s) => s.entryReason),
+        byTimeframe: groupBy(l, (s) => s.timeframe ?? (s.engine === 'tn' ? TN_TIMEFRAME : null)), byReason: groupBy(l, (s) => s.entryReason),
         daily: periodStats(l, 'daily'), weekly: periodStats(l, 'weekly'), monthly: periodStats(l, 'monthly') };
     }
   }
