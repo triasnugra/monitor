@@ -60,3 +60,15 @@ Tidak perlu GitHub Secrets (data publik).
 
 ## Menjalankan lokal
 `npm ci && npm test`. Koleksi nyata membutuhkan `npx playwright install chromium`.
+
+## Pemulihan data & perubahan terbaru
+- **`scripts/rebuild-setups.mjs`**: membangun ulang `data/setups.json` dari `data/raw/` (scan asli) dan, opsional,
+  menggabungkan `setups.json` repo lain (`--merge=path`). Tidak pernah menghapus; evaluasi yang sudah ada
+  dipertahankan (final mengalahkan PENDING). Default dry-run; tambah `--write` untuk menyimpan.
+  Workflow manual `rebuild.yml` menjalankannya lalu `evaluate` + `build`.
+  **Penting:** `raw/` dipangkas ke `rawRetentionPerEngine` (100) scan per mesin, sekitar 14 hari. Pulihkan sebelum
+  scan tertua terhapus, atau naikkan angka itu di `config/settings.json`.
+- **`sourceResult` / `sourceR` / `rawData`** kini diperbarui tiap scan; nilai pertama disimpan di `firstSourceResult`.
+  Sebelumnya membeku di nilai saat pertama terlihat (mis. "menunggu"), sehingga hasil Mesin 2 terlihat usang.
+- **Timeframe Mesin 2** = `1D`. `journal.json` tidak punya field timeframe; nilainya diturunkan dari kode Mesin 2
+  (sinyal dihitung dari candle harian). Konstanta `TN_TIMEFRAME` di `src/parsers/tn.js`.
