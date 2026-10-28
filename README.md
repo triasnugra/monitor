@@ -40,6 +40,21 @@ Tidak perlu GitHub Secrets (data publik).
   selisih expectancy tidak mencakup 0.
 - Sampel independen: satu setup per klaster near-duplicate (engine + simbol + arah, ≤24 jam, entry ±1%).
 
+## Dua aturan penilaian paralel (tab "Aturan Mesin 2 vs Monitor")
+Setiap setup dinilai dua kali dari candle Binance yang sama dan disimpan terpisah:
+- `evaluation` = **aturan monitor** (`src/evaluator/evaluate.js`). Dipakai di semua tab lain.
+- `evaluationM2` = **Aturan Mesin 2** (`src/evaluator/mesin2-rules.js`), port dari `tn/trade-sim.mjs` (`gradeTrade`). Angkanya sebanding dengan halaman /tn/.
+
+Beda utama: pada Aturan Mesin 2, TP yang tersentuh *sebelum* entry tidak mematikan setup (order limit tetap ditunggu sampai `due`, 7 hari;
+untuk Mesin 2 `due` diambil dari jurnal). Pada aturan monitor, setup itu berstatus `EXPIRED / TP_REACHED_BEFORE_ENTRY`.
+Label Mesin 2 dipetakan: `tidak terisi` → `EXPIRED/NOT_FILLED`, `kedaluwarsa` → `EXPIRED/EXPIRED_FILLED`, `menunggu` → `PENDING`.
+
+Tab tersebut menampilkan: kolom berdampingan (Jurnal /tn/ · Aturan Mesin 2 · Aturan monitor), jembatan rekonsiliasi
+(sumber → Aturan Mesin 2 → aturan monitor → sampel independen, dengan ΔTP/ΔSL), matriks transisi per setup, dan validasi
+port (hasil Aturan Mesin 2 vs `hasil` di jurnal /tn/; selisih didaftar). Hasil sumber (`sourceResult`, `sourceR`, `sourceExitUtc`)
+kini **disegarkan di setiap collect**; `originalStatus` tetap status saat pertama terlihat. Setup yang belum dinilai Aturan Mesin 2
+dihitung PENDING dan diberi banner sampai run evaluasi berikutnya. Setelah deploy, run pertama menilai semua setup lama sekali.
+
 ## Asumsi & keterbatasan
 - Fill limit dianggap terjadi saat harga menyentuh level. Tanpa fee, funding, dan slippage.
 - R = |TP−fill| / |fill−SL| untuk TP; −1 untuk SL. Hanya TP pertama yang dievaluasi.
@@ -60,15 +75,3 @@ Tidak perlu GitHub Secrets (data publik).
 
 ## Menjalankan lokal
 `npm ci && npm test`. Koleksi nyata membutuhkan `npx playwright install chromium`.
-
-## Pemulihan data & perubahan terbaru
-- **`scripts/rebuild-setups.mjs`**: membangun ulang `data/setups.json` dari `data/raw/` (scan asli) dan, opsional,
-  menggabungkan `setups.json` repo lain (`--merge=path`). Tidak pernah menghapus; evaluasi yang sudah ada
-  dipertahankan (final mengalahkan PENDING). Default dry-run; tambah `--write` untuk menyimpan.
-  Workflow manual `rebuild.yml` menjalankannya lalu `evaluate` + `build`.
-  **Penting:** `raw/` dipangkas ke `rawRetentionPerEngine` (100) scan per mesin, sekitar 14 hari. Pulihkan sebelum
-  scan tertua terhapus, atau naikkan angka itu di `config/settings.json`.
-- **`sourceResult` / `sourceR` / `rawData`** kini diperbarui tiap scan; nilai pertama disimpan di `firstSourceResult`.
-  Sebelumnya membeku di nilai saat pertama terlihat (mis. "menunggu"), sehingga hasil Mesin 2 terlihat usang.
-- **Timeframe Mesin 2** = `1D`. `journal.json` tidak punya field timeframe; nilainya diturunkan dari kode Mesin 2
-  (sinyal dihitung dari candle harian). Konstanta `TN_TIMEFRAME` di `src/parsers/tn.js`.
