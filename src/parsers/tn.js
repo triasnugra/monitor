@@ -7,12 +7,6 @@ import { parseTime } from '../util/time.js';
  * disimpan utuh di rawData dan TIDAK ditafsirkan. Arti bm/bi belum diverifikasi.
  * Entry tercatat "Entry limit" pada kartu DOM /tn/ (24 kemunculan di rendered.html).
  */
-// journal.json TIDAK memuat field timeframe. Nilai ini diturunkan dari kode Mesin 2 (core.mjs):
-// sinyal dihitung dari candle harian Binance (interval=1d), horizon 7 hari (due = t + 7 hari).
-// Konfirmasi 4H/12H di halaman /tn hanya filter tambahan, bukan timeframe sinyal.
-// Ini turunan dari kode, bukan data sumber; ubah konstanta ini bila definisinya berbeda.
-export const TN_TIMEFRAME = '1D';
-
 export function parseJournalEntry(e) {
   const warnings = [];
   const num = (x) => (typeof x === 'number' && Number.isFinite(x) ? x : null);
@@ -31,10 +25,10 @@ export function parseJournalEntry(e) {
     takeProfit: [num(e.tp)],
     stopLoss: num(e.sl),
     entryReason: e.alasan || null,
-    timeframe: TN_TIMEFRAME,
     originalStatus: e.hasil || null,
     sourceResult: e.hasil || null,
     sourceR: num(e.R),
+    sourceExitMs: num(e.tx), // waktu keluar menurut jurnal /tn/ (ms), ada bila hasil sudah final
     analysisTimeMs: tMs ?? wMs,
     analysisTimeSource: 'source',
     // h = hash rantai per entri (unik). Tidak memakai level harga: BTC SHORT 86620 muncul di dua hari.

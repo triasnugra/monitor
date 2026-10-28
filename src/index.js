@@ -3,6 +3,7 @@ import { buildRecord } from './normalize.js';
 import { parseCryptoCard } from './parsers/crypto.js';
 import { parseJournalEntry } from './parsers/tn.js';
 import { evaluateSetup, FINAL } from './evaluator/evaluate.js';
+import { evaluateMesin2Rules } from './evaluator/mesin2-rules.js';
 import { createBinanceProvider } from './price-data/binance.js';
 import { buildDashboard } from './aggregate.js';
 import * as store from './storage/store.js';
@@ -77,25 +78,51 @@ export async function collect({ engines = ['crypto', 'tn'], sources, settings, n
   return report;
 }
 
+// Status final untuk penilaian Aturan Mesin 2 (PENDING dinilai ulang tiap run).
+const M2_FINAL = new Set(['TP', 'SL', 'EXPIRED', 'INVALID']);
+
+/**
+ * Dua penilaian paralel untuk setiap setup, disimpan terpisah:
+ *  - setup.evaluation    : aturan monitor (evaluator/evaluate.js)
+ *  - setup.evaluationM2  : Aturan Mesin 2 (evaluator/mesin2-rules.js, port trade-sim.mjs)
+ * Kegagalan satu penilaian tidak menghentikan yang lain.
+ */
 export async function evaluateAll({ provider, settings, now = Date.now(), reevalFinal = false }) {
   const nowIso = toIso(now);
   const setups = store.loadSetups();
-  const rep = { checked: 0, changed: 0, errors: [] };
+  const rep = { checked: 0, changed: 0, checkedM2: 0, changedM2: 0, errors: [] };
   const audit = [];
+  const dueDays = settings.mesin2Rules?.dueDays ?? 7;
   for (const s of setups) {
-    if (!reevalFinal && FINAL.has(s.evaluation?.result)) continue;
-    rep.checked++;
-    try {
-      const ev = await evaluateSetup(s, provider, { now, cfg: settings });
-      const a = store.applyEvaluation(s, ev, nowIso);
-      if (a.length) rep.changed++;
-      audit.push(...a);
-    } catch (e) {
-      s.evaluation = { ...(s.evaluation || { result: 'PENDING' }), priceDataError: `${e.code || 'ERROR'}: ${e.message}`.slice(0, 200) };
-      if (e.code === 'INVALID_SYMBOL') {
-        audit.push(...store.applyEvaluation(s, { result: 'INVALID', reasonCode: 'UNKNOWN_SYMBOL', notes: [e.message], priceDataError: null, evaluatedAtUtc: nowIso }, nowIso));
+    if (reevalFinal || !FINAL.has(s.evaluation?.result)) {
+      rep.checked++;
+      try {
+        const ev = await evaluateSetup(s, provider, { now, cfg: settings });
+        const a = store.applyEvaluation(s, ev, nowIso);
+        if (a.length) rep.changed++;
+        audit.push(...a);
+      } catch (e) {
+        s.evaluation = { ...(s.evaluation || { result: 'PENDING' }), priceDataError: `${e.code || 'ERROR'}: ${e.message}`.slice(0, 200) };
+        if (e.code === 'INVALID_SYMBOL') {
+          audit.push(...store.applyEvaluation(s, { result: 'INVALID', reasonCode: 'UNKNOWN_SYMBOL', notes: [e.message], priceDataError: null, evaluatedAtUtc: nowIso }, nowIso));
+        }
+        rep.errors.push(`${s.setupId}: ${e.message}`.slice(0, 200));
       }
-      rep.errors.push(`${s.setupId}: ${e.message}`.slice(0, 200));
+    }
+    if (reevalFinal || !M2_FINAL.has(s.evaluationM2?.result)) {
+      rep.checkedM2++;
+      try {
+        const ev = await evaluateMesin2Rules(s, provider, { now, dueDays });
+        const a = store.applyEvaluation(s, ev, nowIso, 'evaluationM2');
+        if (a.length) rep.changedM2++;
+        audit.push(...a);
+      } catch (e) {
+        s.evaluationM2 = { ...(s.evaluationM2 || { rule: 'mesin2', result: 'PENDING' }), priceDataError: `${e.code || 'ERROR'}: ${e.message}`.slice(0, 200) };
+        if (e.code === 'INVALID_SYMBOL') {
+          audit.push(...store.applyEvaluation(s, { rule: 'mesin2', result: 'INVALID', reasonCode: 'UNKNOWN_SYMBOL', hasilMesin2: 'tidak valid', notes: [e.message], priceDataError: null, evaluatedAtUtc: nowIso }, nowIso, 'evaluationM2'));
+        }
+        rep.errors.push(`M2 ${s.setupId}: ${e.message}`.slice(0, 200));
+      }
     }
   }
   store.saveSetups(setups);

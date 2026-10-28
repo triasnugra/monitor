@@ -33,7 +33,9 @@ export function saveRaw(engine, tsIso, payload, keep = 100) {
 
 /**
  * Upsert idempoten berdasarkan setupId. Tidak pernah menghapus setup lama.
- * Setup yang sudah ada hanya diperbarui lastSeen/seenCount/status asli terbaru.
+ * Setup yang sudah ada diperbarui: lastSeen/seenCount/status asli terbaru, DAN hasil dari sumber
+ * (sourceResult, sourceR, sourceExitUtc). Sebelumnya field sumber dibekukan saat pertama terlihat,
+ * sehingga perbandingan sumber-vs-evaluasi memakai data basi. originalStatus tetap = status saat pertama terlihat.
  */
 export function upsertSetups(existing, incoming, nowIso, cancelPatterns = []) {
   const byId = new Map(existing.map((s) => [s.setupId, s]));
@@ -49,19 +51,7 @@ export function upsertSetups(existing, incoming, nowIso, cancelPatterns = []) {
       added++;
     } else {
       cur.lastSeenUtc = nowIso; cur.seenCount += 1; cur.latestOriginalStatus = s.originalStatus;
-      // Hasil versi SUMBER diperbarui tiap scan (Mesin 2 mengubah "menunggu" -> TP/SL/kedaluwarsa).
-      // Nilai saat pertama terlihat disimpan di firstSourceResult supaya tidak hilang.
-      if (cur.firstSourceResult === undefined) cur.firstSourceResult = cur.sourceResult ?? null;
-      if (s.sourceResult != null || s.sourceR != null) {
-        cur.sourceResult = s.sourceResult ?? null;
-        cur.sourceR = s.sourceR ?? null;
-        cur.rawData = s.rawData ?? cur.rawData;
-      }
-      // Isi timeframe yang dulu kosong (mis. Mesin 2 sebelum parser memberinya nilai).
-      if (cur.timeframe == null && s.timeframe != null) {
-        cur.timeframe = s.timeframe;
-        cur.missingFields = (cur.missingFields ?? []).filter((k) => k !== 'timeframe');
-      }
+      refreshSourceFields(cur, s, nowIso);
       if (!cur.engineCancelledAtUtc && re && s.originalStatus && re.test(s.originalStatus)) cur.engineCancelledAtUtc = nowIso;
       updated++;
     }
@@ -69,12 +59,26 @@ export function upsertSetups(existing, incoming, nowIso, cancelPatterns = []) {
   return { setups: [...byId.values()], added, updated };
 }
 
+/** Segarkan hasil dari sumber. Hanya menimpa bila sumber memang memberi nilai di scan ini. */
+export function refreshSourceFields(cur, incoming, nowIso) {
+  if (incoming.sourceResult === undefined) return false; // parser tidak menyediakan hasil sumber (mis. Mesin 1)
+  const next = incoming.sourceResult ?? null;
+  const changed = (cur.sourceResult ?? null) !== next;
+  if (changed) cur.sourceResultChangedUtc = nowIso;
+  cur.sourceResult = next;
+  cur.sourceR = incoming.sourceR ?? null;
+  cur.sourceExitUtc = incoming.sourceExitUtc ?? null;
+  cur.sourceCheckedUtc = nowIso;
+  return changed;
+}
+
 /** Terapkan hasil evaluasi; setiap perubahan status dicatat sebagai audit trail. */
-export function applyEvaluation(setup, evaluation, nowIso) {
-  const from = setup.evaluation?.result ?? null;
+export function applyEvaluation(setup, evaluation, nowIso, field = 'evaluation') {
+  const from = setup[field]?.result ?? null;
   const audit = from !== evaluation.result
-    ? [{ tsUtc: nowIso, setupId: setup.setupId, from, to: evaluation.result, reasonCode: evaluation.reasonCode ?? null }] : [];
-  setup.evaluation = evaluation;
+    ? [{ tsUtc: nowIso, setupId: setup.setupId, from, to: evaluation.result, reasonCode: evaluation.reasonCode ?? null,
+        ...(field === 'evaluation' ? {} : { rule: 'mesin2' }) }] : [];
+  setup[field] = evaluation;
   return audit;
 }
 

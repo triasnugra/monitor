@@ -76,6 +76,7 @@ export function buildRecord(input, ctx) {
     originalStatus: input.originalStatus ?? null,
     sourceResult: input.sourceResult ?? null,
     sourceR: input.sourceR ?? null,
+    sourceExitUtc: Number.isFinite(input.sourceExitMs) ? toIso(input.sourceExitMs) : null,
     sourceUrl: ctx.sourceUrl ?? null,
     rawData: input.rawData ?? null,
     warnings,
