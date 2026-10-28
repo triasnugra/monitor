@@ -31,11 +31,17 @@ export function saveRaw(engine, tsIso, payload, keep = 100) {
   for (const f of files.slice(0, Math.max(0, files.length - keep))) fs.unlinkSync(path.join(dir, f));
 }
 
+/** Metadata hasil sumber: kapan terakhir dicek, kapan berubah, dan waktu keluar menurut sumber. */
+export function trackSourceMeta(cur, incoming, nowIso) {
+  if (incoming.sourceResult == null && incoming.sourceR == null) return;
+  if ((cur.sourceResult ?? null) !== (incoming.sourceResult ?? null)) cur.sourceResultChangedUtc = nowIso;
+  cur.sourceExitUtc = incoming.sourceExitUtc ?? cur.sourceExitUtc ?? null;
+  cur.sourceCheckedUtc = nowIso;
+}
+
 /**
  * Upsert idempoten berdasarkan setupId. Tidak pernah menghapus setup lama.
- * Setup yang sudah ada diperbarui: lastSeen/seenCount/status asli terbaru, DAN hasil dari sumber
- * (sourceResult, sourceR, sourceExitUtc). Sebelumnya field sumber dibekukan saat pertama terlihat,
- * sehingga perbandingan sumber-vs-evaluasi memakai data basi. originalStatus tetap = status saat pertama terlihat.
+ * Setup yang sudah ada hanya diperbarui lastSeen/seenCount/status asli terbaru.
  */
 export function upsertSetups(existing, incoming, nowIso, cancelPatterns = []) {
   const byId = new Map(existing.map((s) => [s.setupId, s]));
@@ -51,25 +57,25 @@ export function upsertSetups(existing, incoming, nowIso, cancelPatterns = []) {
       added++;
     } else {
       cur.lastSeenUtc = nowIso; cur.seenCount += 1; cur.latestOriginalStatus = s.originalStatus;
-      refreshSourceFields(cur, s, nowIso);
+      // Hasil versi SUMBER diperbarui tiap scan (Mesin 2 mengubah "menunggu" -> TP/SL/kedaluwarsa).
+      // Nilai saat pertama terlihat disimpan di firstSourceResult supaya tidak hilang.
+      if (cur.firstSourceResult === undefined) cur.firstSourceResult = cur.sourceResult ?? null;
+      trackSourceMeta(cur, s, nowIso); // harus sebelum sourceResult ditimpa di bawah (deteksi perubahan)
+      if (s.sourceResult != null || s.sourceR != null) {
+        cur.sourceResult = s.sourceResult ?? null;
+        cur.sourceR = s.sourceR ?? null;
+        cur.rawData = s.rawData ?? cur.rawData;
+      }
+      // Isi timeframe yang dulu kosong (mis. Mesin 2 sebelum parser memberinya nilai).
+      if (cur.timeframe == null && s.timeframe != null) {
+        cur.timeframe = s.timeframe;
+        cur.missingFields = (cur.missingFields ?? []).filter((k) => k !== 'timeframe');
+      }
       if (!cur.engineCancelledAtUtc && re && s.originalStatus && re.test(s.originalStatus)) cur.engineCancelledAtUtc = nowIso;
       updated++;
     }
   }
   return { setups: [...byId.values()], added, updated };
-}
-
-/** Segarkan hasil dari sumber. Hanya menimpa bila sumber memang memberi nilai di scan ini. */
-export function refreshSourceFields(cur, incoming, nowIso) {
-  if (incoming.sourceResult === undefined) return false; // parser tidak menyediakan hasil sumber (mis. Mesin 1)
-  const next = incoming.sourceResult ?? null;
-  const changed = (cur.sourceResult ?? null) !== next;
-  if (changed) cur.sourceResultChangedUtc = nowIso;
-  cur.sourceResult = next;
-  cur.sourceR = incoming.sourceR ?? null;
-  cur.sourceExitUtc = incoming.sourceExitUtc ?? null;
-  cur.sourceCheckedUtc = nowIso;
-  return changed;
 }
 
 /** Terapkan hasil evaluasi; setiap perubahan status dicatat sebagai audit trail. */
